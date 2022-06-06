@@ -8,5 +8,8 @@
 
 <script setup>
 const data = ref({});
-data.value = await $fetch("/api/v1");
+data.value = await $fetch("/api/v1/jobs", {
+  method: "post",
+  body: { body: "this is the body" },
+});
 </script>
