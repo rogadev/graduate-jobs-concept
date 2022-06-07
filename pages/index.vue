@@ -3,8 +3,10 @@ const loading = ref(false);
 const results = ref({});
 const credential = ref("Degree");
 const field = ref("Computer Science");
+const hasSearched = ref(false);
 
 const search = () => {
+  hasSearched.value = true;
   const url = new URL("/api/v1/jobs", window.location.origin);
   url.searchParams.append("credential", credential.value);
   url.searchParams.append("field", field.value);
@@ -25,18 +27,22 @@ const search = () => {
 
 <template>
   <div>
-    <h1>VIU Program Graduate Jobs</h1>
+    <h1>Careers Related to Your Program</h1>
     <div class="input-area">
       <div class="input-grouping">
         <label for="credential_type"
           >Type of credential - try "diploma" or "degree"</label
         >
-        <input
-          type="text"
+        <select
+          class="select-field"
           name="credential_type"
           id="credential_type"
           v-model="credential"
-        />
+        >
+          <option value="Degree">Degree</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Certificate">Certificate</option>
+        </select>
       </div>
       <div class="input-grouping">
         <label for="credential_type"
@@ -48,13 +54,16 @@ const search = () => {
           name="credential_type"
           id="credential_type"
           v-model="field"
+          @keyup.enter="search"
         />
       </div>
       <button type="button" @click="search">Look for jobs</button>
     </div>
 
-    <p v-if="loading">Loading...</p>
-    <OutputArea :results="results" />
+    <div v-if="hasSearched">
+      <p v-if="loading">Loading...</p>
+      <OutputArea :results="results" />
+    </div>
   </div>
 </template>
 
@@ -97,5 +106,10 @@ input {
 .input-area > button:hover {
   background-color: #1da804;
   box-shadow: 3px 4px 5px rgb(238, 238, 238);
+}
+.select-field {
+  width: fit-content;
+  margin: 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 </style>
