@@ -27,12 +27,10 @@ const search = () => {
 
 <template>
   <div>
-    <h1>Careers Related to Your Program</h1>
+    <h1>Search for Jobs by Credential</h1>
     <div class="input-area">
       <div class="input-grouping">
-        <label for="credential_type"
-          >Type of credential - try "diploma" or "degree"</label
-        >
+        <label for="credential_type">After a</label>
         <select
           class="select-field"
           name="credential_type"
@@ -43,21 +41,18 @@ const search = () => {
           <option value="Diploma">Diploma</option>
           <option value="Certificate">Certificate</option>
         </select>
-      </div>
-      <div class="input-grouping">
-        <label for="credential_type"
-          >Field of Study - try "computer engineering" or "computer
-          science"</label
-        >
+
+        <label for="credential_type">in</label>
         <input
           type="text"
           name="credential_type"
           id="credential_type"
+          :placeholder="field"
           v-model="field"
           @keyup.enter="search"
         />
+        <button type="button" @click="search">Look for jobs</button>
       </div>
-      <button type="button" @click="search">Look for jobs</button>
     </div>
 
     <div v-if="hasSearched">
@@ -68,14 +63,24 @@ const search = () => {
 </template>
 
 <style scoped>
+h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 .input-area {
   width: fit-content;
+  margin: inherit auto;
 }
+
 .input-grouping {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1rem;
-  border: 1px solid black;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 5px;
   box-shadow: 3px 4px 5px rgb(204, 204, 204);
   padding: 0.5rem;
@@ -89,12 +94,13 @@ input {
   margin: 0.5rem;
   width: 400px;
 }
-.input-area > button {
+button {
   background-color: rgb(8, 0, 255);
   color: white;
   border: none;
   border-radius: 3px;
   padding: 0.5rem;
+  margin-left: 1rem;
   width: fit-content;
   font-weight: bolder;
   cursor: pointer;
@@ -103,7 +109,7 @@ input {
   transition-timing-function: ease-in-out;
   box-shadow: 3px 4px 5px rgb(220, 220, 220);
 }
-.input-area > button:hover {
+button:hover {
   background-color: #1da804;
   box-shadow: 3px 4px 5px rgb(238, 238, 238);
 }
@@ -111,5 +117,35 @@ input {
   width: fit-content;
   margin: 0.5rem;
   padding: 0.25rem 0.5rem;
+}
+@media (max-width: 840px) {
+  .input-area {
+    max-width: 80%;
+    margin: inherit auto;
+  }
+  .input-grouping {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .input-grouping > label {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 570px) {
+  .input-area {
+    max-width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .input-area {
+    width: auto;
+  }
+  .input-grouping {
+    width: auto;
+  }
+  input {
+    width: calc(100% - 2rem);
+  }
 }
 </style>

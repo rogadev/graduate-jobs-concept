@@ -47,7 +47,7 @@ const selectedJob = reactive({
 </script>
 
 <template>
-  <div>
+  <div class="output-area">
     <div v-if="hasResults">
       <div v-if="hasGraduateJobs">
         <h2>Applicable Jobs</h2>
@@ -97,6 +97,10 @@ const selectedJob = reactive({
 </template>
 
 <style scoped>
+.output-area {
+  width: 85%;
+  margin: inherit auto;
+}
 .results-area {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
