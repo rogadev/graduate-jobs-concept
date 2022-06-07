@@ -17,6 +17,33 @@ const hasGraduateJobs = computed(() => {
 const hasExperiencedJobs = computed(() => {
   return new Array(props.results.with_experience)[0].length > 0;
 });
+
+const showModal = ref(false);
+
+const openModal = (jobSelected) => {
+  console.log(jobSelected);
+  // Set our selected job
+  selectedJob.title = jobSelected;
+  selectedJob.number = "";
+  selectedJob.requirements = "";
+  // Show the modal
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  // Hide the modal
+  showModal.value = false;
+  // Reset the selected job
+  selectedJob.title = "";
+  selectedJob.number = "";
+  selectedJob.requirements = "";
+};
+
+const selectedJob = reactive({
+  title: "",
+  number: "",
+  requirements: "",
+});
 </script>
 
 <template>
@@ -32,6 +59,7 @@ const hasExperiencedJobs = computed(() => {
           <ResultChip
             v-for="result of results.after_graduation"
             :result="result"
+            @click="openModal(result)"
           />
         </div>
       </div>
@@ -46,6 +74,8 @@ const hasExperiencedJobs = computed(() => {
           <ResultChip
             v-for="result of results.with_experience"
             :result="result"
+            @click="openModal(result)"
+            @close="closeModal"
           />
         </div>
       </div>
@@ -56,6 +86,13 @@ const hasExperiencedJobs = computed(() => {
     <div v-else>
       <p>No results found.</p>
     </div>
+    <JobDetailsModal
+      v-if="showModal"
+      :job-title="selectedJob.title"
+      :noc-number="selectedJob.number"
+      :job-requirements="selectedJob.requirements"
+      @close="closeModal"
+    />
   </div>
 </template>
 
