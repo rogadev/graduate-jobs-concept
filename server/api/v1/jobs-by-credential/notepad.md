@@ -79,7 +79,7 @@
 ```json
 [
   {
-    "unit_groups": [
+    "groups": [
       {
         "noc_number": "00012",
         "group_title": "Senior managers - financial, communications and other business services",
