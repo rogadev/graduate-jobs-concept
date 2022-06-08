@@ -55,4 +55,4 @@ You should be able to find the live site [here](https://graduate-jobs-ntqf2q0vw-
 
 ### Original Developer
 
-This app was built by VIU student web programmer [Ryan Roga](https://www.roga.dev). For questions, you may wish to visit his contact page.
+This app was built by VIU student web programmer [Ryan Roga](https://www.roga.dev). For questions, visit his contact page.
