@@ -99,15 +99,12 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
     })
 
     // Add our unit group to our list of related groups.
-    const object = {
+    matchedGroups.add({
       noc_number: nocNumber,
       group_title: groupTitle,
       requirements,
       description,
-    }
-    console.log(object)
-
-    matchedGroups.add(object)
+    })
     return matchedGroups
   })
 
