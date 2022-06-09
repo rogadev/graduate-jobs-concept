@@ -6,16 +6,18 @@ const props = defineProps({
   },
 });
 
+console.log(props.results);
+
 const hasResults = computed(() => {
-  return Object.keys(props.results).length > 0;
+  return Object.keys(props.results).keys().length >= 2;
 });
 
-const hasGraduateJobs = computed(() => {
-  return new Array(props.results.after_graduation)[0].length > 0;
+const groups = computed(() => {
+  return props.results.groups;
 });
 
-const hasExperiencedJobs = computed(() => {
-  return new Array(props.results.with_experience)[0].length > 0;
+const jobs = computed(() => {
+  return props.results.jobs;
 });
 
 const showModal = ref(false);
@@ -48,6 +50,8 @@ const selectedJob = reactive({
 
 <template>
   <div class="output-area">
+    <p>{{ groups }}</p>
+    <p>{{ jobs }}</p>
     <div v-if="hasResults">
       <div v-if="hasGraduateJobs">
         <h2>Applicable Jobs</h2>

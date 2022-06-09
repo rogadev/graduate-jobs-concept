@@ -2,27 +2,28 @@
 const loading = ref(false);
 const results = ref({});
 const credential = ref("Degree");
-const field = ref("Computer Science");
+const keywords = ref("Computer Science");
+const duration = ref("");
 const hasSearched = ref(false);
 
-const search = () => {
+const search = async () => {
   hasSearched.value = true;
-  const url = new URL("/api/v1/jobs", window.location.origin);
+  const url = new URL("/api/v1/jobs-by-credential", window.location.origin);
   url.searchParams.append("credential", credential.value);
-  url.searchParams.append("field", field.value);
+  url.searchParams.append("keywords", keywords.value);
+  if (duration.value !== "")
+    url.searchParams.append("duration", keywords.value);
 
   loading.value = true;
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      results.value = data;
-      loading.value = false;
-    })
-    .catch((err) => {
-      console.error(err);
-      loading.value = false;
-    });
+  results.value = await $fetch(url);
+  loading.value = false;
 };
+
+watch(credential, () => {
+  if (credential.value !== "Degree") {
+    duration.value = "";
+  }
+});
 </script>
 
 <template>
@@ -31,6 +32,17 @@ const search = () => {
     <div class="input-area">
       <div class="input-grouping">
         <label for="credential_type">After a</label>
+        <select
+          class="select-field"
+          name="credential_type"
+          id="credential_type"
+          v-model="duration"
+          v-if="credential === 'Degree'"
+        >
+          <option value=""></option>
+          <option value="Bachelor's">Bachelor's</option>
+          <option value="Master's">Master's</option>
+        </select>
         <select
           class="select-field"
           name="credential_type"
@@ -47,8 +59,8 @@ const search = () => {
           type="text"
           name="credential_type"
           id="credential_type"
-          :placeholder="field"
-          v-model="field"
+          :placeholder="keywords"
+          v-model="keywords"
           @keyup.enter="search"
         />
         <button type="button" @click="search">Look for jobs</button>
@@ -80,7 +92,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  border: 1px solid rgb(204, 204, 204);
+  border: 1px solid rgb(227, 227, 227);
   border-radius: 5px;
   box-shadow: 3px 4px 5px rgb(204, 204, 204);
   padding: 0.5rem;
@@ -94,6 +106,15 @@ input {
   margin: 0.5rem;
   width: 400px;
 }
+select {
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 3px;
+  padding: 0.5rem;
+  outline: none;
+}
+label:nth-of-type(1) {
+  margin-left: 0.75rem;
+}
 button {
   background-color: rgb(8, 0, 255);
   color: white;
@@ -101,6 +122,7 @@ button {
   border-radius: 3px;
   padding: 0.5rem;
   margin-left: 1rem;
+  margin-right: 0.75rem;
   width: fit-content;
   font-weight: bolder;
   cursor: pointer;
@@ -118,6 +140,7 @@ button:hover {
   margin: 0.5rem;
   padding: 0.25rem 0.5rem;
 }
+
 @media (max-width: 840px) {
   .input-area {
     max-width: 80%;
