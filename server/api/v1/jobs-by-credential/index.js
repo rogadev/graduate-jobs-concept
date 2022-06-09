@@ -26,7 +26,6 @@ export default defineEventHandler(async (event) => {
     search.duration
   )
 
-  console.log(relatedGroups)
   return relatedGroups
 
   // TODO - Search through relatedGroups, get an array of related job objects including job titles and noc codes.
@@ -40,15 +39,19 @@ export default defineEventHandler(async (event) => {
  * @param {Array<String>} keywords
  * @param {String} duration
  */
-function findRelatedUnitGroups(credential, keywords, duration = false) {
+function findRelatedUnitGroups(credential, rawKeywords, duration = false) {
   const jobList = []
+  // rawKeywords is an object, get the array, split it at commas, lowercase and trim each string.
+  const keywords = rawKeywords[0]
+    .split(',')
+    .map((keyword) => keyword.trim().toLowerCase())
   const relatedGroups = unitGroups.reduce((matchedGroups, unitGroup) => {
     const employmentRequirements = unitGroup.details.find((detail) => {
       return detail.section === 'Employment requirements'
     }).details
 
     // Stringify our employment requirements for fast regex searching.
-    const stringOfRequirements = employmentRequirements.join(' ')
+    const stringOfRequirements = employmentRequirements.join(' ').toLowerCase()
 
     // Matches if at least 1 of the keywords is in the employment requirements
     const hasKeywordMatch = keywords.some((keyword) => {
@@ -60,6 +63,9 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
 
     // Consider duration and educational requirements.
     const educationKeywords = duration ? [duration, credential] : [credential]
+    educationKeywords.forEach((keyword) => keyword.toLowerCase().trim())
+
+    // GOOD UP UNTIL HERE...
 
     // Matches if all educational requirements are met. Iterating over each educational requirement individually for best results.
     const hasEducationMatch = educationKeywords.every((keyword) => {
@@ -76,6 +82,8 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
     const doesRequireExperience = stringOfRequirements.match(
       new RegExp('years of experience', 'gi')
     )
+      ? true
+      : false
 
     // Split off relivant data from Unit Group
     const nocNumber = unitGroup.noc_number
@@ -93,8 +101,9 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
     // Add each of our job objects to our list of applicable jobs for later use outside this block.
     jobs.forEach((job) => {
       jobList.push({
-        noc_number: nocNumber,
+        noc: nocNumber,
         title: job,
+        requires_experience: doesRequireExperience,
       })
     })
 
