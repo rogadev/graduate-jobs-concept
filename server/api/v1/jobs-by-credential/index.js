@@ -56,7 +56,7 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
     })
 
     // If not, we're done here. This unit group does not meet our requirements.
-    if (!hasKeywordMatch) return
+    if (!hasKeywordMatch) return matchedGroups
 
     // Consider duration and educational requirements.
     const educationKeywords = duration ? [duration, credential] : [credential]
@@ -70,7 +70,7 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
       }
     })
 
-    if (!hasEducationMatch) return
+    if (!hasEducationMatch) return matchedGroups
 
     // Boolean set to true if requires "years of experience". False otherwise.
     const doesRequireExperience = stringOfRequirements.match(
@@ -99,14 +99,15 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
     })
 
     // Add our unit group to our list of related groups.
-    matchedGroups.add({
-      noc_number: nocNumber,
-      group_title: groupTitle,
+    const newMatch = {
+      noc: nocNumber,
+      title: groupTitle,
       requirements,
       description,
-    })
-    return matchedGroups
-  })
+    }
+
+    return [...matchedGroups, newMatch]
+  }, [])
 
   return {
     groups: relatedGroups,
