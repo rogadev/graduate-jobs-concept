@@ -108,11 +108,15 @@ function clearSearch() {
 <template>
   <div class="output-area">
     <div v-if="hasResults">
-      <div class="filter-area">
+      <div class="filter-section">
         <h3>Sub-Search These Results</h3>
-        <p>Start typing to filter through search results.</p>
-        <input type="text" v-model="filterSearchInput" />
-        <button @click.prevent="clearSearch">Clear</button>
+        <p class="filter-section-sub-header">
+          Start typing to filter through search results.
+        </p>
+        <div class="sub-search-area">
+          <input type="text" v-model="filterSearchInput" />
+          <button @click.prevent="clearSearch">Clear</button>
+        </div>
       </div>
       <div v-if="hasNoExperiencedJobs">
         <h3>Jobs Available After Graduation</h3>
@@ -153,6 +157,28 @@ function clearSearch() {
 </template>
 
 <style scoped>
+.filter-section-sub-header {
+  margin-left: 0.75rem;
+}
+.sub-search-area {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  display: flex;
+}
+.sub-search-area > input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.sub-search-area > button {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
 h3 {
   margin-left: 0.75rem;
 }
