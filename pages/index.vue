@@ -41,9 +41,9 @@ async function search() {
 
 <template>
   <div>
-    <h1>Search for Jobs by Credential</h1>
-    <div class="input-area">
-      <div class="input-grouping">
+    <div class="input-container">
+      <h1>Search for Jobs by Credential</h1>
+      <div class="input-area">
         <label for="credential_type">After a</label>
         <select
           class="select-field"
@@ -88,6 +88,9 @@ async function search() {
 </template>
 
 <style scoped>
+.input-container {
+  width: 100%;
+}
 h1 {
   font-size: 2.2rem;
   font-weight: bold;
@@ -95,21 +98,17 @@ h1 {
   text-align: center;
 }
 .input-area {
-  width: fit-content;
-  margin: inherit auto;
-}
-
-.input-grouping {
+  width: 85%;
+  margin: 0 auto 1rem auto;
+  min-width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   border: 1px solid rgb(227, 227, 227);
   border-radius: 5px;
   box-shadow: 3px 4px 5px rgb(204, 204, 204);
   padding: 0.5rem;
-  width: fit-content;
 }
 input {
   border: 1px solid rgb(207, 207, 207);
@@ -117,14 +116,9 @@ input {
   outline: none;
   padding: 0.5rem;
   margin: 0.5rem;
-  width: 400px;
+  width: 380px;
 }
-select {
-  border: 1px solid rgb(207, 207, 207);
-  border-radius: 3px;
-  padding: 0.5rem;
-  outline: none;
-}
+
 label:nth-of-type(1) {
   margin-left: 0.75rem;
 }
@@ -133,7 +127,7 @@ button {
   color: white;
   border: none;
   border-radius: 3px;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   margin-left: 1rem;
   margin-right: 0.75rem;
   width: fit-content;
@@ -151,40 +145,41 @@ button:hover {
 .select-field {
   width: fit-content;
   margin: 0.5rem;
-  padding: 0.25rem 0.5rem;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 3px;
+  padding: 0.5rem;
+  outline: none;
+}
+label {
+  font-weight: semi-bold;
+  font-size: 1.25rem;
 }
 
-.select#credential_type {
-  transition: all 0.15s ease-in-out;
-}
-
-@media (max-width: 840px) {
+@media (max-width: 950px) {
   .input-area {
-    max-width: 80%;
-    margin: inherit auto;
-  }
-  .input-grouping {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
   }
-  .input-grouping > label {
-    padding-left: 10px;
+  .select-field {
+    width: 400px;
   }
-}
-@media (max-width: 570px) {
-  .input-area {
-    max-width: 100%;
+  label:nth-of-type(1) {
+    margin-left: 0;
+  }
+  button {
+    width: 400px;
+    margin: 1rem auto;
   }
 }
 @media (max-width: 470px) {
-  .input-area {
-    width: auto;
-  }
-  .input-grouping {
-    width: auto;
-  }
   input {
+    width: calc(100% - 3rem);
+  }
+  button {
+    width: calc(100% - 2rem);
+  }
+  .select-field {
     width: calc(100% - 2rem);
   }
 }
