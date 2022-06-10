@@ -5,3 +5,5 @@ export default defineEventHandler(() => 'Hello World!')
 ```
 
 Given the Example above, the /hello route will be accessible at http://localhost:3000/hello .
+
+> Note: Didn't use routes because I want everything to live in the /api/v1 or future v# path.

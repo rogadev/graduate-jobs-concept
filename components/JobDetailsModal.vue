@@ -1,16 +1,51 @@
+<script setup>
+const props = defineProps({
+  details: {
+    type: Object,
+    required: true,
+  },
+});
+
+const jobNoc = ref(props.details.noc);
+const jobTitle = ref(props.details.title);
+const jobDescription = ref(props.details.group.description);
+const jobRequirements = ref(props.details.group.requirements);
+const jobGroupName = ref(props.details.group.title);
+</script>
+
 <template>
   <div id="details-modal" class="modal" @click.self="$emit('close')">
     <div class="modal-content">
       <div class="modal-header">
         <span class="close" @click="$emit('close')">&times;</span>
-        <h2>{{ titleCase(jobTitle) }}</h2>
+        <h2>{{ $titleCase(jobTitle) }}</h2>
       </div>
       <div class="modal-body">
-        <p>NOC# {{ nocNumber || "Feature coming soon.." }}</p>
-        <p>
-          Job requirements: {{ jobRequirements || "Feature coming soon.." }}
-        </p>
-        <p>Job description: Feature coming soon...</p>
+        <div class="group-details">
+          <h3>
+            NOC Group:
+            <span v-if="jobGroupName">{{ $titleCase(jobGroupName) }}</span>
+            <span v-else>Unknown</span>
+          </h3>
+          <h3>
+            NOC Code: <span v-if="jobNoc">{{ jobNoc }}</span
+            ><small v-else><i>unknown</i></small>
+          </h3>
+        </div>
+        <h4>Requirements</h4>
+        <ul>
+          <li v-for="requirement of jobRequirements">
+            {{ requirement }}
+          </li>
+        </ul>
+        <h4>Description</h4>
+        <ul>
+          <li v-for="description of jobDescription">
+            {{ description }}
+          </li>
+        </ul>
+        <h4>Industry Outlook</h4>
+        <p>Job forecasting and industry outlook features coming soon...</p>
       </div>
       <div class="modal-footer">
         <button class="btn" @click="$emit('close')">Close</button>
@@ -19,26 +54,13 @@
   </div>
 </template>
 
-<script setup>
-defineProps(["job-title", "noc-number", "job-requirements"]);
-
-/**
- * Title case string, ignoring anything inside of brackets
- * @param {string} str  - string to be title cased
- * @returns {string}    - title cased string
- */
-function titleCase(str) {
-  const words = str.split(" ");
-  const result = [];
-
-  words.forEach((word) => {
-    result.push(word.charAt(0).toUpperCase() + word.slice(1));
-  });
-  return result.join(" ");
-}
-</script>
-
 <style scoped>
+.group-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0 0 0;
+  font-weight: bold;
+}
 .modal {
   position: fixed;
   z-index: 1;
@@ -58,7 +80,7 @@ function titleCase(str) {
 }
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
@@ -80,11 +102,15 @@ function titleCase(str) {
 .btn {
   background-color: #4caf50;
   color: white;
+  font-weight: bold;
   padding: 14px 20px;
   margin: 8px 0 0 0;
   border: none;
   cursor: pointer;
   width: 100%;
   border-radius: 5px;
+}
+.btn:hover {
+  background-color: #45a049;
 }
 </style>

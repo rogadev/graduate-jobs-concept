@@ -1,4 +1,5 @@
 <script setup>
+const { $titleCase } = useNuxtApp();
 const props = defineProps({
   result: {
     type: String,
@@ -6,22 +7,7 @@ const props = defineProps({
   },
 });
 
-/**
- * Title case string, ignoring anything inside of brackets
- * @param {string} str  - string to be title cased
- * @returns {string}    - title cased string
- */
-function titleCase(str) {
-  const words = str.split(" ");
-  const result = [];
-
-  words.forEach((word) => {
-    result.push(word.charAt(0).toUpperCase() + word.slice(1));
-  });
-  return result.join(" ");
-}
-
-const output = ref(titleCase(props.result));
+const output = ref($titleCase(props.result));
 </script>
 
 <template>
