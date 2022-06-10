@@ -6,8 +6,11 @@
         <h2>{{ titleCase(jobTitle) }}</h2>
       </div>
       <div class="modal-body">
-        <p>NOC# {{ nocNumber || "error" }}</p>
-        <p>{{ jobRequirements || "error" }}</p>
+        <p>NOC# {{ nocNumber || "Feature coming soon.." }}</p>
+        <p>
+          Job requirements: {{ jobRequirements || "Feature coming soon.." }}
+        </p>
+        <p>Job description: Feature coming soon...</p>
       </div>
       <div class="modal-footer">
         <button class="btn" @click="$emit('close')">Close</button>
