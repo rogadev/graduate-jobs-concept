@@ -1,107 +1,134 @@
 <script setup>
+// Import TitleCase Helper
+const { $titleCase } = useNuxtApp();
+
+// Component Props
 const props = defineProps({
-  results: {
-    type: Object,
-    default: {},
+  jobs: {
+    type: Array,
+    required: true,
+  },
+  groups: {
+    type: Array,
+    required: true,
   },
 });
 
+// Reactive Variables
 const showModal = ref(false);
+const selectedJob = ref(null);
 
-const openModal = (jobSelected) => {
-  console.log(jobSelected);
-  // Set our selected job
-  selectedJob.title = jobSelected;
-  selectedJob.number = "";
-  selectedJob.requirements = "";
-  // Show the modal
+// Used in rendering either results or "no results found".
+const hasResults = computed(() => {
+  return props.jobs.length > 0;
+});
+
+// Sort jobs by experience requirements to render in the UI.
+const noExpJobs = computed(() => {
+  return props.jobs.filter((job) => {
+    return job.requires_experience === false;
+  });
+});
+const expJobs = computed(() => {
+  return props.jobs.filter((job) => {
+    return job.requires_experience === true;
+  });
+});
+
+// Compute wether each job group has jobs or not.
+const hasExperiencedJobs = computed(() => {
+  return expJobs.value.length > 0;
+});
+const hasNoExperiencedJobs = computed(() => {
+  return noExpJobs.value.length > 0;
+});
+
+// Get related group details for a given NOC number.
+function getGroupDetails(noc) {
+  const group = findGroup(noc);
+  const title = group.title;
+  const requirements = group.requirements;
+  const description = group.description;
+  return {
+    title,
+    requirements,
+    description,
+  };
+}
+
+// Search for a group by NOC number.
+function findGroup(noc) {
+  const group = props.groups.find((group) => {
+    return group.noc === noc;
+  });
+  return group;
+}
+
+function openModal(job) {
   showModal.value = true;
-};
+  setSelectedJob(job);
+}
 
-const closeModal = () => {
-  // Hide the modal
+function closeModal() {
   showModal.value = false;
-  // Reset the selected job
-  selectedJob.title = "";
-  selectedJob.number = "";
-  selectedJob.requirements = "";
-};
+}
 
-const selectedJob = reactive({
-  title: "",
-  number: "",
-  requirements: "",
-});
-
-const graduateJobs = ref([]);
-const experiencedJobs = ref([]);
-
-watch(props.results, () => {
-  for (const job of props.results.jobs) {
-    if (job.requires_experience) {
-      experiencedJobs.push(job);
-    } else {
-      graduateJobs.push(job);
-    }
-  }
-  console.log(graduateJobs, experiencedJobs);
-});
+function setSelectedJob(job) {
+  selectedJob.value = {
+    ...job,
+    group: getGroupDetails(job.noc),
+  };
+}
 </script>
 
 <template>
   <div class="output-area">
-    <div v-if="results.length > 0">
-      <div v-if="graduateJobs.length > 0">
-        <h2>Applicable Jobs</h2>
-        <p>
-          This is an exhaustive list of positions you could potentially apply
-          for upon graduation from your program.
-        </p>
+    <div v-if="hasResults">
+      <div v-if="hasNoExperiencedJobs">
+        <h3>Jobs Available After Graduation</h3>
         <div class="results-area">
           <ResultChip
-            v-for="result of results.after_graduation"
-            :result="result"
-            @click="openModal(result)"
+            v-for="job in noExpJobs"
+            :result="job.title"
+            @click="openModal(job)"
           />
         </div>
       </div>
-      <div v-if="experiencedJobs.length > 0">
-        <h2>Future Positions</h2>
-        <p>
-          Future positions require a bit more experience in the industry but,
-          with a bit of experience, these are all potential career paths for
-          you.
-        </p>
+      <div v-if="hasExperiencedJobs">
+        <h3>Jobs Available With Credential &amp; Experience</h3>
         <div class="results-area">
           <ResultChip
-            v-for="result of results.with_experience"
-            :result="result"
-            @click="openModal(result)"
-            @close="closeModal"
+            v-for="job in expJobs"
+            :result="job.title"
+            @click="openModal(job)"
           />
         </div>
-      </div>
-      <div v-if="!hasGraduateJobs && !hasExperiencedJobs">
-        <p>Sorry, no jobs were returned from your search.</p>
       </div>
     </div>
     <div v-else>
-      <p>No results found.</p>
+      <p>
+        No results found. Try searching for different keywords. Check your
+        spelling and remember to use the correct verbage. (ex. Instead of
+        'computer engineer' try 'computer engineering')
+      </p>
     </div>
+
+    <!-- Modal -->
     <JobDetailsModal
       v-if="showModal"
-      :job-title="selectedJob.title"
-      :noc-number="selectedJob.number"
-      :job-requirements="selectedJob.requirements"
+      :details="selectedJob"
       @close="closeModal"
     />
   </div>
 </template>
 
 <style scoped>
+h3 {
+  margin-left: 0.75rem;
+}
 .output-area {
   width: 85%;
-  margin: inherit auto;
+  margin: 3rem auto 0 auto;
 }
 .results-area {
   display: grid;

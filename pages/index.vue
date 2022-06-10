@@ -1,29 +1,42 @@
 <script setup>
-const loading = ref(false);
-const results = ref({});
+// Reactive Variables
 const credential = ref("Degree");
 const keywords = ref("Computer Science");
 const duration = ref("");
+const loading = ref(false);
 const hasSearched = ref(false);
+const jobs = ref([]);
+const groups = ref([]);
+const searchCount = ref(0);
 
-const search = async () => {
-  hasSearched.value = true;
-  const url = new URL("/api/v1/jobs-by-credential", window.location.origin);
-  url.searchParams.append("credential", credential.value);
-  url.searchParams.append("keywords", keywords.value);
-  if (duration.value !== "")
-    url.searchParams.append("duration", keywords.value);
-
-  loading.value = true;
-  results.value = await $fetch(url);
-  loading.value = false;
-};
-
+// Watchers for UI/UX
 watch(credential, () => {
   if (credential.value !== "Degree") {
     duration.value = "";
   }
 });
+
+// Search Function
+async function search() {
+  // Loading...
+  loading.value = true;
+  // Prepare our search request.
+  const url = new URL("/api/v1/jobs-by-credential", window.location.origin);
+  url.searchParams.append("credential", credential.value);
+  url.searchParams.append("keywords", keywords.value);
+  if (duration.value) url.searchParams.append("duration", duration.value);
+  // Fetch our data.
+  const data = await $fetch(url);
+  // Update our jobs and groups.
+  jobs.value = data.jobs;
+  groups.value = data.groups;
+  // Increase search count.
+  searchCount.value++;
+  // We've run at least 1 search. Flipping hasSearched will render the search results area.
+  hasSearched.value = true;
+  // No longer loading
+  loading.value = false;
+}
 </script>
 
 <template>
@@ -69,7 +82,7 @@ watch(credential, () => {
 
     <div v-if="hasSearched">
       <p v-if="loading">Loading...</p>
-      <OutputArea :results="results" />
+      <OutputArea v-else :key="searchCount" :jobs="jobs" :groups="groups" />
     </div>
   </div>
 </template>
@@ -139,6 +152,10 @@ button:hover {
   width: fit-content;
   margin: 0.5rem;
   padding: 0.25rem 0.5rem;
+}
+
+.select#credential_type {
+  transition: all 0.15s ease-in-out;
 }
 
 @media (max-width: 840px) {
