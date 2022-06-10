@@ -6,20 +6,6 @@ const props = defineProps({
   },
 });
 
-console.log(props.results);
-
-const hasResults = computed(() => {
-  return Object.keys(props.results).keys().length >= 2;
-});
-
-const groups = computed(() => {
-  return props.results.groups;
-});
-
-const jobs = computed(() => {
-  return props.results.jobs;
-});
-
 const showModal = ref(false);
 
 const openModal = (jobSelected) => {
@@ -46,14 +32,26 @@ const selectedJob = reactive({
   number: "",
   requirements: "",
 });
+
+const graduateJobs = ref([]);
+const experiencedJobs = ref([]);
+
+watch(props.results, () => {
+  for (const job of props.results.jobs) {
+    if (job.requires_experience) {
+      experiencedJobs.push(job);
+    } else {
+      graduateJobs.push(job);
+    }
+  }
+  console.log(graduateJobs, experiencedJobs);
+});
 </script>
 
 <template>
   <div class="output-area">
-    <p>{{ groups }}</p>
-    <p>{{ jobs }}</p>
-    <div v-if="hasResults">
-      <div v-if="hasGraduateJobs">
+    <div v-if="results.length > 0">
+      <div v-if="graduateJobs.length > 0">
         <h2>Applicable Jobs</h2>
         <p>
           This is an exhaustive list of positions you could potentially apply
@@ -67,7 +65,7 @@ const selectedJob = reactive({
           />
         </div>
       </div>
-      <div v-if="hasExperiencedJobs">
+      <div v-if="experiencedJobs.length > 0">
         <h2>Future Positions</h2>
         <p>
           Future positions require a bit more experience in the industry but,
