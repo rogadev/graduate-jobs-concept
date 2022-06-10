@@ -81,13 +81,18 @@ async function search() {
     </div>
 
     <div v-if="hasSearched">
-      <p v-if="loading">Loading...</p>
+      <p class="loading-text" v-if="loading">Loading...</p>
       <OutputArea v-else :key="searchCount" :jobs="jobs" :groups="groups" />
     </div>
   </div>
 </template>
 
 <style scoped>
+.loading-text {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 .input-container {
   width: 100%;
 }

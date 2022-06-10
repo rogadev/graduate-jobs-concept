@@ -17,20 +17,40 @@ const props = defineProps({
 // Reactive Variables
 const showModal = ref(false);
 const selectedJob = ref(null);
+const displayedJobs = ref(props.jobs);
+const filterSearchInput = ref("");
+
+// Filtered Sub-Search Job Results
+const filteredJobs = computed(() => {
+  const search = filterSearchInput.value.toLowerCase();
+  return displayedJobs.value.filter((job) => {
+    return job.title.toLowerCase().includes(search);
+  });
+});
 
 // Used in rendering either results or "no results found".
 const hasResults = computed(() => {
-  return props.jobs.length > 0;
+  return displayedJobs.value.length > 0;
 });
 
 // Sort jobs by experience requirements to render in the UI.
 const noExpJobs = computed(() => {
-  return props.jobs.filter((job) => {
+  if (!filterSearchInput.value) {
+    return displayedJobs.value.filter((job) => {
+      return job.requires_experience === false;
+    });
+  }
+  return filteredJobs.value.filter((job) => {
     return job.requires_experience === false;
   });
 });
 const expJobs = computed(() => {
-  return props.jobs.filter((job) => {
+  if (!filterSearchInput.value) {
+    return displayedJobs.value.filter((job) => {
+      return job.requires_experience === true;
+    });
+  }
+  return filteredJobs.value.filter((job) => {
     return job.requires_experience === true;
   });
 });
@@ -79,11 +99,21 @@ function setSelectedJob(job) {
     group: getGroupDetails(job.noc),
   };
 }
+
+function clearSearch() {
+  filterSearchInput.value = "";
+}
 </script>
 
 <template>
   <div class="output-area">
     <div v-if="hasResults">
+      <div class="filter-area">
+        <h3>Sub-Search These Results</h3>
+        <p>Start typing to filter through search results.</p>
+        <input type="text" v-model="filterSearchInput" />
+        <button @click.prevent="clearSearch">Clear</button>
+      </div>
       <div v-if="hasNoExperiencedJobs">
         <h3>Jobs Available After Graduation</h3>
         <div class="results-area">
