@@ -17,20 +17,40 @@ const props = defineProps({
 // Reactive Variables
 const showModal = ref(false);
 const selectedJob = ref(null);
+const displayedJobs = ref(props.jobs);
+const filterSearchInput = ref("");
+
+// Filtered Sub-Search Job Results
+const filteredJobs = computed(() => {
+  const search = filterSearchInput.value.toLowerCase();
+  return displayedJobs.value.filter((job) => {
+    return job.title.toLowerCase().includes(search);
+  });
+});
 
 // Used in rendering either results or "no results found".
 const hasResults = computed(() => {
-  return props.jobs.length > 0;
+  return displayedJobs.value.length > 0;
 });
 
 // Sort jobs by experience requirements to render in the UI.
 const noExpJobs = computed(() => {
-  return props.jobs.filter((job) => {
+  if (!filterSearchInput.value) {
+    return displayedJobs.value.filter((job) => {
+      return job.requires_experience === false;
+    });
+  }
+  return filteredJobs.value.filter((job) => {
     return job.requires_experience === false;
   });
 });
 const expJobs = computed(() => {
-  return props.jobs.filter((job) => {
+  if (!filterSearchInput.value) {
+    return displayedJobs.value.filter((job) => {
+      return job.requires_experience === true;
+    });
+  }
+  return filteredJobs.value.filter((job) => {
     return job.requires_experience === true;
   });
 });
@@ -79,11 +99,25 @@ function setSelectedJob(job) {
     group: getGroupDetails(job.noc),
   };
 }
+
+function clearSearch() {
+  filterSearchInput.value = "";
+}
 </script>
 
 <template>
   <div class="output-area">
     <div v-if="hasResults">
+      <div class="filter-section">
+        <h3>Sub-Search These Results</h3>
+        <p class="filter-section-sub-header">
+          Start typing to filter through search results.
+        </p>
+        <div class="sub-search-area">
+          <input type="text" v-model="filterSearchInput" />
+          <button @click.prevent="clearSearch">Clear</button>
+        </div>
+      </div>
       <div v-if="hasNoExperiencedJobs">
         <h3>Jobs Available After Graduation</h3>
         <div class="results-area">
@@ -123,6 +157,28 @@ function setSelectedJob(job) {
 </template>
 
 <style scoped>
+.filter-section-sub-header {
+  margin-left: 0.75rem;
+}
+.sub-search-area {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  display: flex;
+}
+.sub-search-area > input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.sub-search-area > button {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
 h3 {
   margin-left: 0.75rem;
 }
