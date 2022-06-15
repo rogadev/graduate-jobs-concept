@@ -6,6 +6,9 @@ import unitGroups from '../data/jobs.json'
  * @returns {Array.<string>} An array of relevant job titles accoring to NOC.
  */
 function findJobsWithoutExperience(...matches) {
+  return {
+    message: 'This route is no longer in use. Please use /jobs-by-credential',
+  }
   return [
     ...unitGroups.reduce((relatedJobs, unitGroup) => {
       // Search through each unit group for the employment requirements section
