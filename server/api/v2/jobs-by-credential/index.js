@@ -12,7 +12,6 @@ export default defineEventHandler(async (event) => {
   // ERROR HANDLING
   // Should we not receive a "credential" or "keywords" in our query, respond with error and return
   if ((!query.credential ?? true) && (!query.keywords ?? true)) {
-    console.log('Bad request', query.credential, query.keywords)
     sendError(
       event,
       createError({
@@ -79,14 +78,14 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
     // Add each of our job objects to our list of applicable jobs for later use outside this block.
     jobs.forEach((job) => {
       relatedJobs.push({
-        noc: unitGroup.code,
+        noc: unitGroup.noc,
         title: job,
       })
     })
 
     // Add our unit group to our list of related groups.
     const newMatch = {
-      noc: unitGroup.code,
+      noc: unitGroup.noc,
       title: unitGroup.group,
       duties: unitGroup.duties,
       education: unitGroup.education,

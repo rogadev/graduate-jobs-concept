@@ -1,6 +1,6 @@
 [
   {
-    "code": 11,
+    "noc": 11,
     "group": "Legislators",
     "examples": [
       "cabinet minister",
@@ -69,7 +69,7 @@
     "requires_experience": false
   },
   {
-    "code": 12,
+    "noc": 12,
     "group": "Senior government managers and officials",
     "examples": [
       "assistant deputy minister",
@@ -178,7 +178,7 @@
     "requires_experience": false
   },
   {
-    "code": 13,
+    "noc": 13,
     "group": "Senior managers - financial, communications and other business services",
     "examples": [
       "advertising agency president",
@@ -277,7 +277,7 @@
     "requires_experience": true
   },
   {
-    "code": 14,
+    "noc": 14,
     "group": "Senior managers - health, education, social and community services and membership organizations",
     "examples": [
       "arts and culture association chairperson",
@@ -393,7 +393,7 @@
     "requires_experience": true
   },
   {
-    "code": 15,
+    "noc": 15,
     "group": "Senior managers - trade, broadcasting and other services, n.e.c.",
     "examples": [
       "cleaning service general manager",
@@ -479,7 +479,7 @@
     "requires_experience": true
   },
   {
-    "code": 16,
+    "noc": 16,
     "group": "Senior managers - construction, transportation, production and utilities",
     "examples": [
       "chief executive officer (CEO) - manufacturing company",
@@ -565,7 +565,7 @@
     "requires_experience": true
   },
   {
-    "code": 111,
+    "noc": 111,
     "group": "Financial managers",
     "examples": [
       "controller - financial services",
@@ -654,7 +654,7 @@
     "requires_experience": false
   },
   {
-    "code": 112,
+    "noc": 112,
     "group": "Human resources managers",
     "examples": [
       "employer-employee relations manager",
@@ -747,7 +747,7 @@
     "requires_experience": false
   },
   {
-    "code": 113,
+    "noc": 113,
     "group": "Purchasing managers",
     "examples": [
       "contract manager",
@@ -812,7 +812,7 @@
     "requires_experience": false
   },
   {
-    "code": 114,
+    "noc": 114,
     "group": "Other administrative services managers",
     "examples": [
       "administrative services chief",
@@ -894,7 +894,7 @@
     "requires_experience": true
   },
   {
-    "code": 121,
+    "noc": 121,
     "group": "Insurance, real estate and financial brokerage managers",
     "examples": [
       "bond sales manager",
@@ -974,7 +974,7 @@
     "requires_experience": true
   },
   {
-    "code": 122,
+    "noc": 122,
     "group": "Banking, credit and other investment managers",
     "examples": [
       "assistant operations manager - banking, credit and investment",
@@ -1083,7 +1083,7 @@
     "requires_experience": false
   },
   {
-    "code": 124,
+    "noc": 124,
     "group": "Advertising, marketing and public relations managers",
     "examples": [
       "advertising director",
@@ -1178,7 +1178,7 @@
     "requires_experience": false
   },
   {
-    "code": 125,
+    "noc": 125,
     "group": "Other business services managers",
     "examples": [
       "accounting firm manager",
@@ -1255,7 +1255,7 @@
     "requires_experience": true
   },
   {
-    "code": 131,
+    "noc": 131,
     "group": "Telecommunication carriers managers",
     "examples": [
       "microwave facilities manager - telecommunications",
@@ -1324,7 +1324,7 @@
     "requires_experience": true
   },
   {
-    "code": 132,
+    "noc": 132,
     "group": "Postal and courier services managers",
     "examples": [
       "collection and delivery operations manager - postal service",
@@ -1376,7 +1376,7 @@
     "requires_experience": false
   },
   {
-    "code": 211,
+    "noc": 211,
     "group": "Engineering managers",
     "examples": [
       "electrical engineering service manager",
@@ -1427,7 +1427,7 @@
     "requires_experience": false
   },
   {
-    "code": 212,
+    "noc": 212,
     "group": "Architecture and science managers",
     "examples": [
       "agricultural chemistry branch director",
@@ -1518,7 +1518,7 @@
     "requires_experience": false
   },
   {
-    "code": 213,
+    "noc": 213,
     "group": "Computer and information systems managers",
     "examples": [
       "computer systems manager",
@@ -1591,7 +1591,7 @@
     "requires_experience": false
   },
   {
-    "code": 311,
+    "noc": 311,
     "group": "Managers in health care",
     "examples": [
       "chief of anesthesia",
@@ -1712,7 +1712,7 @@
     "requires_experience": true
   },
   {
-    "code": 411,
+    "noc": 411,
     "group": "Government managers - health and social policy development and program administration",
     "examples": [
       "city medical officer of health - government services",
@@ -1839,7 +1839,7 @@
     "requires_experience": true
   },
   {
-    "code": 412,
+    "noc": 412,
     "group": "Government managers - economic analysis, policy development and program administration",
     "examples": [
       "border services manager",
@@ -1945,7 +1945,7 @@
     "requires_experience": false
   },
   {
-    "code": 413,
+    "noc": 413,
     "group": "Government managers - education policy development and program administration",
     "examples": [
       "education curriculum development director",
@@ -2022,7 +2022,7 @@
     "requires_experience": false
   },
   {
-    "code": 414,
+    "noc": 414,
     "group": "Other managers in public administration",
     "examples": [
       "clerk of the committee - Legislative Assembly",
@@ -2086,7 +2086,7 @@
     "requires_experience": true
   },
   {
-    "code": 421,
+    "noc": 421,
     "group": "Administrators - post-secondary education and vocational training",
     "examples": [
       "aviation school manager",
@@ -2194,7 +2194,7 @@
     "requires_experience": false
   },
   {
-    "code": 422,
+    "noc": 422,
     "group": "School principals and administrators of elementary and secondary education",
     "examples": [
       "board of education administrator",
@@ -2291,7 +2291,7 @@
     "requires_experience": false
   },
   {
-    "code": 423,
+    "noc": 423,
     "group": "Managers in social, community and correctional services",
     "examples": [
       "association director",
@@ -2412,7 +2412,7 @@
     "requires_experience": false
   },
   {
-    "code": 431,
+    "noc": 431,
     "group": "Commissioned police officers",
     "examples": [
       "chief superintendent",
@@ -2482,7 +2482,7 @@
     "requires_experience": false
   },
   {
-    "code": 432,
+    "noc": 432,
     "group": "Fire chiefs and senior firefighting officers",
     "examples": [
       "deputy fire chief",
@@ -2528,7 +2528,7 @@
     "requires_experience": true
   },
   {
-    "code": 433,
+    "noc": 433,
     "group": "Commissioned officers of the Canadian Armed Forces",
     "examples": [
       "admiral",
@@ -2595,7 +2595,7 @@
     "requires_experience": false
   },
   {
-    "code": 511,
+    "noc": 511,
     "group": "Library, archive, museum and art gallery managers",
     "examples": [
       "archives director",
@@ -2677,7 +2677,7 @@
     "requires_experience": true
   },
   {
-    "code": 512,
+    "noc": 512,
     "group": "Managers - publishing, motion pictures, broadcasting and performing arts",
     "examples": [
       "ballet company director",
@@ -2756,7 +2756,7 @@
     "requires_experience": true
   },
   {
-    "code": 513,
+    "noc": 513,
     "group": "Recreation, sports and fitness program and service directors",
     "examples": [
       "director of recreation",
@@ -2878,7 +2878,7 @@
     "requires_experience": true
   },
   {
-    "code": 601,
+    "noc": 601,
     "group": "Corporate sales managers",
     "examples": [
       "corporate sales manager",
@@ -2931,7 +2931,7 @@
     "requires_experience": true
   },
   {
-    "code": 621,
+    "noc": 621,
     "group": "Retail and wholesale trade managers",
     "examples": [
       "antique dealer",
@@ -3101,7 +3101,7 @@
     "requires_experience": false
   },
   {
-    "code": 631,
+    "noc": 631,
     "group": "Restaurant and food service managers",
     "examples": [
       "banquet manager",
@@ -3160,7 +3160,7 @@
     "requires_experience": false
   },
   {
-    "code": 632,
+    "noc": 632,
     "group": "Accommodation service managers",
     "examples": [
       "bed and breakfast operator",
@@ -3239,7 +3239,7 @@
     "requires_experience": true
   },
   {
-    "code": 651,
+    "noc": 651,
     "group": "Managers in customer and personal services, n.e.c.",
     "examples": [
       "barber shop manager",
@@ -3327,7 +3327,7 @@
     "requires_experience": true
   },
   {
-    "code": 711,
+    "noc": 711,
     "group": "Construction managers",
     "examples": [
       "commercial construction manager",
@@ -3393,7 +3393,7 @@
     "requires_experience": true
   },
   {
-    "code": 712,
+    "noc": 712,
     "group": "Home building and renovation managers",
     "examples": [
       "home builder",
@@ -3437,7 +3437,7 @@
     "requires_experience": false
   },
   {
-    "code": 714,
+    "noc": 714,
     "group": "Facility operation and maintenance managers",
     "examples": [
       "airport manager",
@@ -3547,7 +3547,7 @@
     "requires_experience": false
   },
   {
-    "code": 731,
+    "noc": 731,
     "group": "Managers in transportation",
     "examples": [
       "bus company manager",
@@ -3683,7 +3683,7 @@
     "requires_experience": true
   },
   {
-    "code": 811,
+    "noc": 811,
     "group": "Managers in natural resources production and fishing",
     "examples": [
       "director of mining",
@@ -3746,7 +3746,7 @@
     "requires_experience": true
   },
   {
-    "code": 821,
+    "noc": 821,
     "group": "Managers in agriculture",
     "examples": [
       "apiarist",
@@ -3892,7 +3892,7 @@
     "requires_experience": false
   },
   {
-    "code": 822,
+    "noc": 822,
     "group": "Managers in horticulture",
     "examples": [
       "Christmas tree farm operator",
@@ -3945,7 +3945,7 @@
     "requires_experience": false
   },
   {
-    "code": 823,
+    "noc": 823,
     "group": "Managers in aquaculture",
     "examples": [
       "aquaculture manager",
@@ -4002,7 +4002,7 @@
     "requires_experience": true
   },
   {
-    "code": 911,
+    "noc": 911,
     "group": "Manufacturing managers",
     "examples": [
       "automobile production manager",
@@ -4106,7 +4106,7 @@
     "requires_experience": false
   },
   {
-    "code": 912,
+    "noc": 912,
     "group": "Utilities managers",
     "examples": [
       "director of waste management",
@@ -4193,7 +4193,7 @@
     "requires_experience": false
   },
   {
-    "code": 1111,
+    "noc": 1111,
     "group": "Financial auditors and accountants",
     "examples": [
       "accountant",
@@ -4306,7 +4306,7 @@
     "requires_experience": false
   },
   {
-    "code": 1112,
+    "noc": 1112,
     "group": "Financial and investment analysts",
     "examples": [
       "chartered financial analyst",
@@ -4367,7 +4367,7 @@
     "requires_experience": false
   },
   {
-    "code": 1113,
+    "noc": 1113,
     "group": "Securities agents, investment dealers and brokers",
     "examples": [
       "bond dealer",
@@ -4448,7 +4448,7 @@
     "requires_experience": false
   },
   {
-    "code": 1114,
+    "noc": 1114,
     "group": "Other financial officers",
     "examples": [
       "account manager",
@@ -4531,7 +4531,7 @@
     "requires_experience": false
   },
   {
-    "code": 1121,
+    "noc": 1121,
     "group": "Human resources professionals",
     "examples": [
       "classification officer - human resources",
@@ -4659,7 +4659,7 @@
     "requires_experience": false
   },
   {
-    "code": 1122,
+    "noc": 1122,
     "group": "Professional occupations in business management consulting",
     "examples": [
       "business management consultant",
@@ -4744,7 +4744,7 @@
     "requires_experience": false
   },
   {
-    "code": 1123,
+    "noc": 1123,
     "group": "Professional occupations in advertising, marketing and public relations",
     "examples": [
       "advertising consultant",
@@ -4881,7 +4881,7 @@
     "requires_experience": false
   },
   {
-    "code": 1211,
+    "noc": 1211,
     "group": "Supervisors, general office and administrative support workers",
     "examples": [
       "clerical supervisor",
@@ -4953,7 +4953,7 @@
     "requires_experience": false
   },
   {
-    "code": 1212,
+    "noc": 1212,
     "group": "Supervisors, finance and insurance office workers",
     "examples": [
       "accounts payable supervisor",
@@ -5031,7 +5031,7 @@
     "requires_experience": false
   },
   {
-    "code": 1213,
+    "noc": 1213,
     "group": "Supervisors, library, correspondence and related information workers",
     "examples": [
       "advertising clerks supervisor",
@@ -5084,7 +5084,7 @@
     "requires_experience": false
   },
   {
-    "code": 1214,
+    "noc": 1214,
     "group": "Supervisors, mail and message distribution occupations",
     "examples": [
       "courier service supervisor",
@@ -5128,7 +5128,7 @@
     "requires_experience": true
   },
   {
-    "code": 1215,
+    "noc": 1215,
     "group": "Supervisors, supply chain, tracking and scheduling co-ordination occupations",
     "examples": [
       "dispatch logistician",
@@ -5243,7 +5243,7 @@
     "requires_experience": true
   },
   {
-    "code": 1221,
+    "noc": 1221,
     "group": "Administrative officers",
     "examples": [
       "access to information and privacy officer",
@@ -5356,7 +5356,7 @@
     "requires_experience": false
   },
   {
-    "code": 1222,
+    "noc": 1222,
     "group": "Executive assistants",
     "examples": [
       "committee clerk",
@@ -5394,7 +5394,7 @@
     "requires_experience": false
   },
   {
-    "code": 1223,
+    "noc": 1223,
     "group": "Human resources and recruitment officers",
     "examples": [
       "human resources officer",
@@ -5456,7 +5456,7 @@
     "requires_experience": false
   },
   {
-    "code": 1224,
+    "noc": 1224,
     "group": "Property administrators",
     "examples": [
       "accommodation officer",
@@ -5515,7 +5515,7 @@
     "requires_experience": false
   },
   {
-    "code": 1225,
+    "noc": 1225,
     "group": "Purchasing agents and officers",
     "examples": [
       "contract management officer",
@@ -5603,7 +5603,7 @@
     "requires_experience": false
   },
   {
-    "code": 1226,
+    "noc": 1226,
     "group": "Conference and event planners",
     "examples": [
       "conference and meeting planner",
@@ -5659,7 +5659,7 @@
     "requires_experience": true
   },
   {
-    "code": 1227,
+    "noc": 1227,
     "group": "Court officers and justices of the peace",
     "examples": [
       "commissioner of affidavits",
@@ -5766,7 +5766,7 @@
     "requires_experience": true
   },
   {
-    "code": 1228,
+    "noc": 1228,
     "group": "Employment insurance, immigration, border services and revenue officers",
     "examples": [
       "border services officer (BSO)",
@@ -5899,7 +5899,7 @@
     "requires_experience": false
   },
   {
-    "code": 1241,
+    "noc": 1241,
     "group": "Administrative assistants",
     "examples": [
       "administrative assistant",
@@ -5954,7 +5954,7 @@
     "requires_experience": false
   },
   {
-    "code": 1242,
+    "noc": 1242,
     "group": "Legal administrative assistants",
     "examples": [
       "administrative assistant - legal",
@@ -6019,7 +6019,7 @@
     "requires_experience": false
   },
   {
-    "code": 1243,
+    "noc": 1243,
     "group": "Medical administrative assistants",
     "examples": [
       "administrative assistant - medical",
@@ -6056,7 +6056,7 @@
     "requires_experience": false
   },
   {
-    "code": 1251,
+    "noc": 1251,
     "group": "Court reporters, medical transcriptionists and related occupations",
     "examples": [
       "closed captioner",
@@ -6104,7 +6104,7 @@
     "requires_experience": false
   },
   {
-    "code": 1252,
+    "noc": 1252,
     "group": "Health information management occupations",
     "examples": [
       "health information management supervisor",
@@ -6145,7 +6145,7 @@
     "requires_experience": false
   },
   {
-    "code": 1253,
+    "noc": 1253,
     "group": "Records management technicians",
     "examples": [
       "information management technician",
@@ -6186,7 +6186,7 @@
     "requires_experience": false
   },
   {
-    "code": 1254,
+    "noc": 1254,
     "group": "Statistical officers and related research support occupations",
     "examples": [
       "research assistant - generalist (except university)",
@@ -6222,7 +6222,7 @@
     "requires_experience": false
   },
   {
-    "code": 1311,
+    "noc": 1311,
     "group": "Accounting technicians and bookkeepers",
     "examples": [
       "accounting bookkeeper",
@@ -6257,7 +6257,7 @@
     "requires_experience": false
   },
   {
-    "code": 1312,
+    "noc": 1312,
     "group": "Insurance adjusters and claims examiners",
     "examples": [
       "adjuster",
@@ -6331,7 +6331,7 @@
     "requires_experience": true
   },
   {
-    "code": 1313,
+    "noc": 1313,
     "group": "Insurance underwriters",
     "examples": [
       "group underwriter",
@@ -6387,7 +6387,7 @@
     "requires_experience": false
   },
   {
-    "code": 1314,
+    "noc": 1314,
     "group": "Assessors, valuators and appraisers",
     "examples": [
       "accredited appraiser",
@@ -6452,7 +6452,7 @@
     "requires_experience": false
   },
   {
-    "code": 1315,
+    "noc": 1315,
     "group": "Customs, ship and other brokers",
     "examples": [
       "cargo broker",
@@ -6512,7 +6512,7 @@
     "requires_experience": false
   },
   {
-    "code": 1411,
+    "noc": 1411,
     "group": "General office support workers",
     "examples": [
       "administrative clerk",
@@ -6617,7 +6617,7 @@
     "requires_experience": false
   },
   {
-    "code": 1414,
+    "noc": 1414,
     "group": "Receptionists",
     "examples": [
       "answering service operator",
@@ -6711,7 +6711,7 @@
     "requires_experience": false
   },
   {
-    "code": 1415,
+    "noc": 1415,
     "group": "Personnel clerks",
     "examples": [
       "classification clerk - human resources",
@@ -6753,7 +6753,7 @@
     "requires_experience": false
   },
   {
-    "code": 1416,
+    "noc": 1416,
     "group": "Court clerks",
     "examples": [
       "court clerk",
@@ -6791,7 +6791,7 @@
     "requires_experience": false
   },
   {
-    "code": 1422,
+    "noc": 1422,
     "group": "Data entry clerks",
     "examples": [
       "data control clerk",
@@ -6832,7 +6832,7 @@
     "requires_experience": false
   },
   {
-    "code": 1423,
+    "noc": 1423,
     "group": "Desktop publishing operators and related occupations",
     "examples": [
       "braille keyboard operator",
@@ -6951,7 +6951,7 @@
     "requires_experience": false
   },
   {
-    "code": 1431,
+    "noc": 1431,
     "group": "Accounting and related clerks",
     "examples": [
       "accounting clerk",
@@ -7045,7 +7045,7 @@
     "requires_experience": false
   },
   {
-    "code": 1432,
+    "noc": 1432,
     "group": "Payroll administrators",
     "examples": [
       "benefits officer - payroll administration",
@@ -7098,7 +7098,7 @@
     "requires_experience": false
   },
   {
-    "code": 1434,
+    "noc": 1434,
     "group": "Banking, insurance and other financial clerks",
     "examples": [
       "actuarial clerk",
@@ -7212,7 +7212,7 @@
     "requires_experience": false
   },
   {
-    "code": 1435,
+    "noc": 1435,
     "group": "Collectors",
     "examples": [
       "bill collector",
@@ -7261,7 +7261,7 @@
     "requires_experience": false
   },
   {
-    "code": 1451,
+    "noc": 1451,
     "group": "Library assistants and clerks",
     "examples": [
       "circulation clerk - library",
@@ -7315,7 +7315,7 @@
     "requires_experience": false
   },
   {
-    "code": 1452,
+    "noc": 1452,
     "group": "Correspondence, publication and regulatory clerks",
     "examples": [
       "advertising clerk",
@@ -7422,7 +7422,7 @@
     "requires_experience": false
   },
   {
-    "code": 1454,
+    "noc": 1454,
     "group": "Survey interviewers and statistical clerks",
     "examples": [
       "census enumerator",
@@ -7483,7 +7483,7 @@
     "requires_experience": false
   },
   {
-    "code": 1511,
+    "noc": 1511,
     "group": "Mail, postal and related workers",
     "examples": [
       "bus parcel express clerk",
@@ -7555,7 +7555,7 @@
     "requires_experience": false
   },
   {
-    "code": 1512,
+    "noc": 1512,
     "group": "Letter carriers",
     "examples": [
       "letter carrier",
@@ -7592,7 +7592,7 @@
     "requires_experience": false
   },
   {
-    "code": 1513,
+    "noc": 1513,
     "group": "Couriers, messengers and door-to-door distributors",
     "examples": [
       "bank messenger",
@@ -7653,7 +7653,7 @@
     "requires_experience": false
   },
   {
-    "code": 1521,
+    "noc": 1521,
     "group": "Shippers and receivers",
     "examples": [
       "freight receiver",
@@ -7720,7 +7720,7 @@
     "requires_experience": false
   },
   {
-    "code": 1522,
+    "noc": 1522,
     "group": "Storekeepers and partspersons",
     "examples": [
       "ammunition storekeeper",
@@ -7812,7 +7812,7 @@
     "requires_experience": false
   },
   {
-    "code": 1523,
+    "noc": 1523,
     "group": "Production logistics co-ordinators",
     "examples": [
       "expediter",
@@ -7880,7 +7880,7 @@
     "requires_experience": false
   },
   {
-    "code": 1524,
+    "noc": 1524,
     "group": "Purchasing and inventory control workers",
     "examples": [
       "inventory analyst",
@@ -7938,7 +7938,7 @@
     "requires_experience": false
   },
   {
-    "code": 1525,
+    "noc": 1525,
     "group": "Dispatchers",
     "examples": [
       "911 dispatcher",
@@ -8018,7 +8018,7 @@
     "requires_experience": false
   },
   {
-    "code": 1526,
+    "noc": 1526,
     "group": "Transportation route and crew schedulers",
     "examples": [
       "bus scheduler",
@@ -8079,7 +8079,7 @@
     "requires_experience": true
   },
   {
-    "code": 2111,
+    "noc": 2111,
     "group": "Physicists and astronomers",
     "examples": [
       "acoustics physicist",
@@ -8179,7 +8179,7 @@
     "requires_experience": false
   },
   {
-    "code": 2112,
+    "noc": 2112,
     "group": "Chemists",
     "examples": [
       "agricultural chemist",
@@ -8296,7 +8296,7 @@
     "requires_experience": false
   },
   {
-    "code": 2113,
+    "noc": 2113,
     "group": "Geoscientists and oceanographers",
     "examples": [
       "development geologist",
@@ -8412,7 +8412,7 @@
     "requires_experience": false
   },
   {
-    "code": 2114,
+    "noc": 2114,
     "group": "Meteorologists and climatologists",
     "examples": [
       "air quality meteorologist",
@@ -8457,7 +8457,7 @@
     "requires_experience": false
   },
   {
-    "code": 2115,
+    "noc": 2115,
     "group": "Other professional occupations in physical sciences",
     "examples": [
       "astronaut",
@@ -8508,7 +8508,7 @@
     "requires_experience": false
   },
   {
-    "code": 2121,
+    "noc": 2121,
     "group": "Biologists and related scientists",
     "examples": [
       "anatomist",
@@ -8691,7 +8691,7 @@
     "requires_experience": false
   },
   {
-    "code": 2122,
+    "noc": 2122,
     "group": "Forestry professionals",
     "examples": [
       "appraisal forester",
@@ -8745,7 +8745,7 @@
     "requires_experience": false
   },
   {
-    "code": 2123,
+    "noc": 2123,
     "group": "Agricultural representatives, consultants and specialists",
     "examples": [
       "agricultural consultant",
@@ -8812,7 +8812,7 @@
     "requires_experience": false
   },
   {
-    "code": 2131,
+    "noc": 2131,
     "group": "Civil engineers",
     "examples": [
       "bridge engineer",
@@ -8932,7 +8932,7 @@
     "requires_experience": false
   },
   {
-    "code": 2132,
+    "noc": 2132,
     "group": "Mechanical engineers",
     "examples": [
       "acoustics engineer",
@@ -9015,7 +9015,7 @@
     "requires_experience": false
   },
   {
-    "code": 2133,
+    "noc": 2133,
     "group": "Electrical and electronics engineers",
     "examples": [
       "avionics engineer",
@@ -9114,7 +9114,7 @@
     "requires_experience": false
   },
   {
-    "code": 2134,
+    "noc": 2134,
     "group": "Chemical engineers",
     "examples": [
       "adhesives engineer",
@@ -9189,7 +9189,7 @@
     "requires_experience": false
   },
   {
-    "code": 2141,
+    "noc": 2141,
     "group": "Industrial and manufacturing engineers",
     "examples": [
       "computer integrated manufacturing (CIM) engineer",
@@ -9247,7 +9247,7 @@
     "requires_experience": false
   },
   {
-    "code": 2142,
+    "noc": 2142,
     "group": "Metallurgical and materials engineers",
     "examples": [
       "ceramics engineer",
@@ -9295,7 +9295,7 @@
     "requires_experience": false
   },
   {
-    "code": 2143,
+    "noc": 2143,
     "group": "Mining engineers",
     "examples": [
       "mine design engineer",
@@ -9343,7 +9343,7 @@
     "requires_experience": false
   },
   {
-    "code": 2144,
+    "noc": 2144,
     "group": "Geological engineers",
     "examples": [
       "geological engineer",
@@ -9379,7 +9379,7 @@
     "requires_experience": false
   },
   {
-    "code": 2145,
+    "noc": 2145,
     "group": "Petroleum engineers",
     "examples": [
       "oil and gas drilling engineer",
@@ -9432,7 +9432,7 @@
     "requires_experience": false
   },
   {
-    "code": 2146,
+    "noc": 2146,
     "group": "Aerospace engineers",
     "examples": [
       "aerodynamics engineer",
@@ -9492,7 +9492,7 @@
     "requires_experience": false
   },
   {
-    "code": 2147,
+    "noc": 2147,
     "group": "Computer engineers (except software engineers and designers)",
     "examples": [
       "computer hardware engineer",
@@ -9571,7 +9571,7 @@
     "requires_experience": false
   },
   {
-    "code": 2148,
+    "noc": 2148,
     "group": "Other professional engineers, n.e.c.",
     "examples": [
       "agricultural engineer",
@@ -9630,7 +9630,7 @@
     "requires_experience": false
   },
   {
-    "code": 2151,
+    "noc": 2151,
     "group": "Architects",
     "examples": [
       "architect",
@@ -9671,7 +9671,7 @@
     "requires_experience": false
   },
   {
-    "code": 2152,
+    "noc": 2152,
     "group": "Landscape architects",
     "examples": [
       "landscape architect",
@@ -9702,7 +9702,7 @@
     "requires_experience": false
   },
   {
-    "code": 2153,
+    "noc": 2153,
     "group": "Urban and land use planners",
     "examples": [
       "community and urban planner",
@@ -9768,7 +9768,7 @@
     "requires_experience": false
   },
   {
-    "code": 2154,
+    "noc": 2154,
     "group": "Land surveyors",
     "examples": [
       "cadastral surveyor",
@@ -9816,7 +9816,7 @@
     "requires_experience": false
   },
   {
-    "code": 2161,
+    "noc": 2161,
     "group": "Mathematicians, statisticians and actuaries",
     "examples": [
       "actuary",
@@ -9897,7 +9897,7 @@
     "requires_experience": false
   },
   {
-    "code": 2171,
+    "noc": 2171,
     "group": "Information systems analysts and consultants",
     "examples": [
       "computer systems analyst",
@@ -9984,7 +9984,7 @@
     "requires_experience": false
   },
   {
-    "code": 2172,
+    "noc": 2172,
     "group": "Database analysts and data administrators",
     "examples": [
       "data administrator",
@@ -10042,7 +10042,7 @@
     "requires_experience": false
   },
   {
-    "code": 2173,
+    "noc": 2173,
     "group": "Software engineers and designers",
     "examples": [
       "application architect",
@@ -10101,7 +10101,7 @@
     "requires_experience": false
   },
   {
-    "code": 2174,
+    "noc": 2174,
     "group": "Computer programmers and interactive media developers",
     "examples": [
       "application programmer",
@@ -10180,7 +10180,7 @@
     "requires_experience": false
   },
   {
-    "code": 2175,
+    "noc": 2175,
     "group": "Web designers and developers",
     "examples": [
       "electronic business (e-business) Web site developer",
@@ -10228,7 +10228,7 @@
     "requires_experience": false
   },
   {
-    "code": 2211,
+    "noc": 2211,
     "group": "Chemical technologists and technicians",
     "examples": [
       "biochemistry technologist",
@@ -10374,7 +10374,7 @@
     "requires_experience": false
   },
   {
-    "code": 2212,
+    "noc": 2212,
     "group": "Geological and mineral technologists and technicians",
     "examples": [
       "assayer",
@@ -10517,7 +10517,7 @@
     "requires_experience": false
   },
   {
-    "code": 2221,
+    "noc": 2221,
     "group": "Biological technologists and technicians",
     "examples": [
       "agricultural technician",
@@ -10646,7 +10646,7 @@
     "requires_experience": false
   },
   {
-    "code": 2222,
+    "noc": 2222,
     "group": "Agricultural and fish products inspectors",
     "examples": [
       "agricultural products inspection supervisor",
@@ -10726,7 +10726,7 @@
     "requires_experience": true
   },
   {
-    "code": 2223,
+    "noc": 2223,
     "group": "Forestry technologists and technicians",
     "examples": [
       "conservation technician - forestry",
@@ -10832,7 +10832,7 @@
     "requires_experience": false
   },
   {
-    "code": 2224,
+    "noc": 2224,
     "group": "Conservation and fishery officers",
     "examples": [
       "conservation officer",
@@ -10884,7 +10884,7 @@
     "requires_experience": false
   },
   {
-    "code": 2225,
+    "noc": 2225,
     "group": "Landscape and horticulture technicians and specialists",
     "examples": [
       "arborist",
@@ -10965,7 +10965,7 @@
     "requires_experience": false
   },
   {
-    "code": 2231,
+    "noc": 2231,
     "group": "Civil engineering technologists and technicians",
     "examples": [
       "bridge design technician",
@@ -11051,7 +11051,7 @@
     "requires_experience": false
   },
   {
-    "code": 2232,
+    "noc": 2232,
     "group": "Mechanical engineering technologists and technicians",
     "examples": [
       "aeronautical technologist",
@@ -11138,7 +11138,7 @@
     "requires_experience": false
   },
   {
-    "code": 2233,
+    "noc": 2233,
     "group": "Industrial engineering and manufacturing technologists and technicians",
     "examples": [
       "computer-assisted design/computer-assisted manufacturing (CAD/CAM) programmer",
@@ -11231,7 +11231,7 @@
     "requires_experience": false
   },
   {
-    "code": 2234,
+    "noc": 2234,
     "group": "Construction estimators",
     "examples": [
       "chief estimator - construction",
@@ -11282,7 +11282,7 @@
     "requires_experience": false
   },
   {
-    "code": 2241,
+    "noc": 2241,
     "group": "Electrical and electronics engineering technologists and technicians",
     "examples": [
       "communications technologist",
@@ -11409,7 +11409,7 @@
     "requires_experience": false
   },
   {
-    "code": 2242,
+    "noc": 2242,
     "group": "Electronic service technicians (household and business equipment)",
     "examples": [
       "alarm system technician",
@@ -11511,7 +11511,7 @@
     "requires_experience": false
   },
   {
-    "code": 2243,
+    "noc": 2243,
     "group": "Industrial instrument technicians and mechanics",
     "examples": [
       "apprentice industrial instrument mechanic",
@@ -11560,7 +11560,7 @@
     "requires_experience": false
   },
   {
-    "code": 2244,
+    "noc": 2244,
     "group": "Aircraft instrument, electrical and avionics mechanics, technicians and inspectors",
     "examples": [
       "aircraft electrical technician",
@@ -11650,7 +11650,7 @@
     "requires_experience": false
   },
   {
-    "code": 2251,
+    "noc": 2251,
     "group": "Architectural technologists and technicians",
     "examples": [
       "architectural design technician",
@@ -11688,7 +11688,7 @@
     "requires_experience": false
   },
   {
-    "code": 2252,
+    "noc": 2252,
     "group": "Industrial designers",
     "examples": [
       "furniture designer",
@@ -11726,7 +11726,7 @@
     "requires_experience": false
   },
   {
-    "code": 2253,
+    "noc": 2253,
     "group": "Drafting technologists and technicians",
     "examples": [
       "architectural draftsperson",
@@ -11848,7 +11848,7 @@
     "requires_experience": false
   },
   {
-    "code": 2254,
+    "noc": 2254,
     "group": "Land survey technologists and technicians",
     "examples": [
       "engineering survey technologist",
@@ -11905,7 +11905,7 @@
     "requires_experience": false
   },
   {
-    "code": 2255,
+    "noc": 2255,
     "group": "Technical occupations in geomatics and meteorology",
     "examples": [
       "aerial survey technician",
@@ -12026,7 +12026,7 @@
     "requires_experience": false
   },
   {
-    "code": 2261,
+    "noc": 2261,
     "group": "Non-destructive testers and inspection technicians",
     "examples": [
       "acoustic emission technician",
@@ -12119,7 +12119,7 @@
     "requires_experience": false
   },
   {
-    "code": 2262,
+    "noc": 2262,
     "group": "Engineering inspectors and regulatory officers",
     "examples": [
       "air carrier maintenance inspector",
@@ -12204,7 +12204,7 @@
     "requires_experience": false
   },
   {
-    "code": 2263,
+    "noc": 2263,
     "group": "Inspectors in public and environmental health and occupational health and safety",
     "examples": [
       "environmental health officer",
@@ -12310,7 +12310,7 @@
     "requires_experience": false
   },
   {
-    "code": 2264,
+    "noc": 2264,
     "group": "Construction inspectors",
     "examples": [
       "bridge inspector",
@@ -12409,7 +12409,7 @@
     "requires_experience": false
   },
   {
-    "code": 2271,
+    "noc": 2271,
     "group": "Air pilots, flight engineers and flying instructors",
     "examples": [
       "air pilot",
@@ -12521,7 +12521,7 @@
     "requires_experience": false
   },
   {
-    "code": 2272,
+    "noc": 2272,
     "group": "Air traffic controllers and related occupations",
     "examples": [
       "air traffic controller (ATC)",
@@ -12586,7 +12586,7 @@
     "requires_experience": false
   },
   {
-    "code": 2273,
+    "noc": 2273,
     "group": "Deck officers, water transport",
     "examples": [
       "Coast Guard vessel first watchkeeping officer",
@@ -12699,7 +12699,7 @@
     "requires_experience": true
   },
   {
-    "code": 2274,
+    "noc": 2274,
     "group": "Engineer officers, water transport",
     "examples": [
       "chief engineer - water transport",
@@ -12765,7 +12765,7 @@
     "requires_experience": false
   },
   {
-    "code": 2275,
+    "noc": 2275,
     "group": "Railway traffic controllers and marine traffic regulators",
     "examples": [
       "chief rail traffic controller",
@@ -12812,7 +12812,7 @@
     "requires_experience": false
   },
   {
-    "code": 2281,
+    "noc": 2281,
     "group": "Computer network technicians",
     "examples": [
       "computer network technician",
@@ -12874,7 +12874,7 @@
     "requires_experience": false
   },
   {
-    "code": 2282,
+    "noc": 2282,
     "group": "User support technicians",
     "examples": [
       "call centre agent - technical support",
@@ -12931,7 +12931,7 @@
     "requires_experience": false
   },
   {
-    "code": 2283,
+    "noc": 2283,
     "group": "Information systems testing technicians",
     "examples": [
       "application tester",
@@ -12971,7 +12971,7 @@
     "requires_experience": false
   },
   {
-    "code": 3011,
+    "noc": 3011,
     "group": "Nursing co-ordinators and supervisors",
     "examples": [
       "nursing care co-ordinator",
@@ -13031,7 +13031,7 @@
     "requires_experience": false
   },
   {
-    "code": 3012,
+    "noc": 3012,
     "group": "Registered nurses and registered psychiatric nurses",
     "examples": [
       "clinical nurse",
@@ -13209,7 +13209,7 @@
     "requires_experience": false
   },
   {
-    "code": 3111,
+    "noc": 3111,
     "group": "Specialist physicians",
     "examples": [
       "anatomical pathologist",
@@ -13462,7 +13462,7 @@
     "requires_experience": false
   },
   {
-    "code": 3112,
+    "noc": 3112,
     "group": "General practitioners and family physicians",
     "examples": [
       "family physician",
@@ -13522,7 +13522,7 @@
     "requires_experience": false
   },
   {
-    "code": 3113,
+    "noc": 3113,
     "group": "Dentists",
     "examples": [
       "dentist",
@@ -13576,7 +13576,7 @@
     "requires_experience": false
   },
   {
-    "code": 3114,
+    "noc": 3114,
     "group": "Veterinarians",
     "examples": [
       "farm veterinarian",
@@ -13639,7 +13639,7 @@
     "requires_experience": false
   },
   {
-    "code": 3121,
+    "noc": 3121,
     "group": "Optometrists",
     "examples": [
       "doctor of optometry (OD)",
@@ -13665,7 +13665,7 @@
     "requires_experience": false
   },
   {
-    "code": 3122,
+    "noc": 3122,
     "group": "Chiropractors",
     "examples": [
       "chiropractor",
@@ -13688,7 +13688,7 @@
     "requires_experience": false
   },
   {
-    "code": 3124,
+    "noc": 3124,
     "group": "Allied primary health practitioners",
     "examples": [
       "anesthesia assistant",
@@ -13751,7 +13751,7 @@
     "requires_experience": false
   },
   {
-    "code": 3125,
+    "noc": 3125,
     "group": "Other professional occupations in health diagnosing and treating",
     "examples": [
       "chiropodist",
@@ -13827,7 +13827,7 @@
     "requires_experience": false
   },
   {
-    "code": 3131,
+    "noc": 3131,
     "group": "Pharmacists",
     "examples": [
       "clinical pharmacist",
@@ -13882,7 +13882,7 @@
     "requires_experience": false
   },
   {
-    "code": 3132,
+    "noc": 3132,
     "group": "Dietitians and nutritionists",
     "examples": [
       "administrative dietitian",
@@ -13954,7 +13954,7 @@
     "requires_experience": false
   },
   {
-    "code": 3141,
+    "noc": 3141,
     "group": "Audiologists and speech-language pathologists",
     "examples": [
       "audiologist",
@@ -14018,7 +14018,7 @@
     "requires_experience": false
   },
   {
-    "code": 3142,
+    "noc": 3142,
     "group": "Physiotherapists",
     "examples": [
       "physical therapist",
@@ -14066,7 +14066,7 @@
     "requires_experience": false
   },
   {
-    "code": 3143,
+    "noc": 3143,
     "group": "Occupational therapists",
     "examples": [
       "case manager occupational therapist",
@@ -14110,7 +14110,7 @@
     "requires_experience": false
   },
   {
-    "code": 3144,
+    "noc": 3144,
     "group": "Other professional occupations in therapy and assessment",
     "examples": [
       "art therapist",
@@ -14188,7 +14188,7 @@
     "requires_experience": false
   },
   {
-    "code": 3211,
+    "noc": 3211,
     "group": "Medical laboratory technologists",
     "examples": [
       "clinical immunology technologist",
@@ -14256,7 +14256,7 @@
     "requires_experience": false
   },
   {
-    "code": 3212,
+    "noc": 3212,
     "group": "Medical laboratory technicians and pathologists' assistants",
     "examples": [
       "medical laboratory assistant",
@@ -14321,7 +14321,7 @@
     "requires_experience": false
   },
   {
-    "code": 3213,
+    "noc": 3213,
     "group": "Animal health technologists and veterinary technicians",
     "examples": [
       "animal health technician",
@@ -14373,7 +14373,7 @@
     "requires_experience": false
   },
   {
-    "code": 3214,
+    "noc": 3214,
     "group": "Respiratory therapists, clinical perfusionists and cardiopulmonary technologists",
     "examples": [
       "cardiopulmonary technologist",
@@ -14467,7 +14467,7 @@
     "requires_experience": false
   },
   {
-    "code": 3215,
+    "noc": 3215,
     "group": "Medical radiation technologists",
     "examples": [
       "mammography technician",
@@ -14588,7 +14588,7 @@
     "requires_experience": false
   },
   {
-    "code": 3216,
+    "noc": 3216,
     "group": "Medical sonographers",
     "examples": [
       "diagnostic medical sonography instructor",
@@ -14653,7 +14653,7 @@
     "requires_experience": false
   },
   {
-    "code": 3217,
+    "noc": 3217,
     "group": "Cardiology technologists and electrophysiological diagnostic technologists, n.e.c.",
     "examples": [
       "cardiac stress technologist",
@@ -14741,7 +14741,7 @@
     "requires_experience": false
   },
   {
-    "code": 3219,
+    "noc": 3219,
     "group": "Other medical technologists and technicians (except dental health)",
     "examples": [
       "dietary technician",
@@ -14852,7 +14852,7 @@
     "requires_experience": false
   },
   {
-    "code": 3221,
+    "noc": 3221,
     "group": "Denturists",
     "examples": [
       "dental mechanic",
@@ -14891,7 +14891,7 @@
     "requires_experience": false
   },
   {
-    "code": 3222,
+    "noc": 3222,
     "group": "Dental hygienists and dental therapists",
     "examples": [
       "dental hygienist",
@@ -14947,7 +14947,7 @@
     "requires_experience": false
   },
   {
-    "code": 3223,
+    "noc": 3223,
     "group": "Dental technologists, technicians and laboratory assistants",
     "examples": [
       "ceramic denture moulder",
@@ -15022,7 +15022,7 @@
     "requires_experience": false
   },
   {
-    "code": 3231,
+    "noc": 3231,
     "group": "Opticians",
     "examples": [
       "contact lens fitter",
@@ -15075,7 +15075,7 @@
     "requires_experience": false
   },
   {
-    "code": 3232,
+    "noc": 3232,
     "group": "Practitioners of natural healing",
     "examples": [
       "acupuncturist",
@@ -15164,7 +15164,7 @@
     "requires_experience": false
   },
   {
-    "code": 3233,
+    "noc": 3233,
     "group": "Licensed practical nurses",
     "examples": [
       "graduate nursing assistant",
@@ -15210,7 +15210,7 @@
     "requires_experience": false
   },
   {
-    "code": 3234,
+    "noc": 3234,
     "group": "Paramedical occupations",
     "examples": [
       "advanced care paramedic",
@@ -15285,7 +15285,7 @@
     "requires_experience": false
   },
   {
-    "code": 3236,
+    "noc": 3236,
     "group": "Massage therapists",
     "examples": [
       "massage therapist (MT)",
@@ -15318,7 +15318,7 @@
     "requires_experience": false
   },
   {
-    "code": 3237,
+    "noc": 3237,
     "group": "Other technical occupations in therapy and assessment",
     "examples": [
       "audiology technician",
@@ -15439,7 +15439,7 @@
     "requires_experience": false
   },
   {
-    "code": 3411,
+    "noc": 3411,
     "group": "Dental assistants",
     "examples": [
       "certified dental assistant",
@@ -15482,7 +15482,7 @@
     "requires_experience": false
   },
   {
-    "code": 3413,
+    "noc": 3413,
     "group": "Nurse aides, orderlies and patient service associates",
     "examples": [
       "health care aide",
@@ -15583,7 +15583,7 @@
     "requires_experience": false
   },
   {
-    "code": 3414,
+    "noc": 3414,
     "group": "Other assisting occupations in support of health services",
     "examples": [
       "autopsy assistant",
@@ -15764,7 +15764,7 @@
     "requires_experience": false
   },
   {
-    "code": 4011,
+    "noc": 4011,
     "group": "University professors and lecturers",
     "examples": [
       "botany assistant professor - university",
@@ -15918,7 +15918,7 @@
     "requires_experience": false
   },
   {
-    "code": 4012,
+    "noc": 4012,
     "group": "Post-secondary teaching and research assistants",
     "examples": [
       "college laboratory assistant",
@@ -15959,7 +15959,7 @@
     "requires_experience": false
   },
   {
-    "code": 4021,
+    "noc": 4021,
     "group": "College and other vocational instructors",
     "examples": [
       "college teacher",
@@ -16179,7 +16179,7 @@
     "requires_experience": false
   },
   {
-    "code": 4031,
+    "noc": 4031,
     "group": "Secondary school teachers",
     "examples": [
       "adult education teacher - secondary school",
@@ -16315,7 +16315,7 @@
     "requires_experience": false
   },
   {
-    "code": 4032,
+    "noc": 4032,
     "group": "Elementary school and kindergarten teachers",
     "examples": [
       "English as a second language elementary school teacher",
@@ -16393,7 +16393,7 @@
     "requires_experience": false
   },
   {
-    "code": 4033,
+    "noc": 4033,
     "group": "Educational counsellors",
     "examples": [
       "academic counsellor",
@@ -16462,7 +16462,7 @@
     "requires_experience": false
   },
   {
-    "code": 4111,
+    "noc": 4111,
     "group": "Judges",
     "examples": [
       "chief justice",
@@ -16529,7 +16529,7 @@
     "requires_experience": false
   },
   {
-    "code": 4112,
+    "noc": 4112,
     "group": "Lawyers and Quebec notaries",
     "examples": [
       "articling law student",
@@ -16652,7 +16652,7 @@
     "requires_experience": false
   },
   {
-    "code": 4151,
+    "noc": 4151,
     "group": "Psychologists",
     "examples": [
       "clinical psychologist",
@@ -16721,7 +16721,7 @@
     "requires_experience": false
   },
   {
-    "code": 4152,
+    "noc": 4152,
     "group": "Social workers",
     "examples": [
       "co-ordinator of social work",
@@ -16784,7 +16784,7 @@
     "requires_experience": false
   },
   {
-    "code": 4153,
+    "noc": 4153,
     "group": "Family, marriage and other related counsellors",
     "examples": [
       "addictions counsellor",
@@ -16879,7 +16879,7 @@
     "requires_experience": false
   },
   {
-    "code": 4154,
+    "noc": 4154,
     "group": "Professional occupations in religion",
     "examples": [
       "archbishop",
@@ -16940,7 +16940,7 @@
     "requires_experience": false
   },
   {
-    "code": 4155,
+    "noc": 4155,
     "group": "Probation and parole officers and related occupations",
     "examples": [
       "case manager - corrections",
@@ -16988,7 +16988,7 @@
     "requires_experience": false
   },
   {
-    "code": 4156,
+    "noc": 4156,
     "group": "Employment counsellors",
     "examples": [
       "career counsellor (except education)",
@@ -17049,7 +17049,7 @@
     "requires_experience": false
   },
   {
-    "code": 4161,
+    "noc": 4161,
     "group": "Natural and applied science policy researchers, consultants and program officers",
     "examples": [
       "certified ergonomist",
@@ -17168,7 +17168,7 @@
     "requires_experience": false
   },
   {
-    "code": 4162,
+    "noc": 4162,
     "group": "Economists and economic policy researchers and analysts",
     "examples": [
       "agricultural economist",
@@ -17261,7 +17261,7 @@
     "requires_experience": false
   },
   {
-    "code": 4163,
+    "noc": 4163,
     "group": "Business development officers and marketing researchers and consultants",
     "examples": [
       "business development officer",
@@ -17358,7 +17358,7 @@
     "requires_experience": false
   },
   {
-    "code": 4164,
+    "noc": 4164,
     "group": "Social policy researchers, consultants and program officers",
     "examples": [
       "Aboriginal issues lobbyist",
@@ -17523,7 +17523,7 @@
     "requires_experience": false
   },
   {
-    "code": 4165,
+    "noc": 4165,
     "group": "Health policy researchers, consultants and program officers",
     "examples": [
       "child health care programs planning officer",
@@ -17601,7 +17601,7 @@
     "requires_experience": true
   },
   {
-    "code": 4166,
+    "noc": 4166,
     "group": "Education policy researchers, consultants and program officers",
     "examples": [
       "curriculum developer",
@@ -17684,7 +17684,7 @@
     "requires_experience": true
   },
   {
-    "code": 4167,
+    "noc": 4167,
     "group": "Recreation, sports and fitness policy researchers, consultants and program officers",
     "examples": [
       "fitness policy analyst",
@@ -17790,7 +17790,7 @@
     "requires_experience": false
   },
   {
-    "code": 4168,
+    "noc": 4168,
     "group": "Program officers unique to government",
     "examples": [
       "attach?",
@@ -17880,7 +17880,7 @@
     "requires_experience": false
   },
   {
-    "code": 4169,
+    "noc": 4169,
     "group": "Other professional occupations in social science, n.e.c.",
     "examples": [
       "anthropologist",
@@ -17984,7 +17984,7 @@
     "requires_experience": false
   },
   {
-    "code": 4211,
+    "noc": 4211,
     "group": "Paralegal and related occupations",
     "examples": [
       "commercial law clerk",
@@ -18093,7 +18093,7 @@
     "requires_experience": false
   },
   {
-    "code": 4212,
+    "noc": 4212,
     "group": "Social and community service workers",
     "examples": [
       "Aboriginal outreach worker",
@@ -18251,7 +18251,7 @@
     "requires_experience": false
   },
   {
-    "code": 4214,
+    "noc": 4214,
     "group": "Early childhood educators and assistants",
     "examples": [
       "child care worker assistant",
@@ -18338,7 +18338,7 @@
     "requires_experience": false
   },
   {
-    "code": 4215,
+    "noc": 4215,
     "group": "Instructors of persons with disabilities",
     "examples": [
       "braille instructor",
@@ -18412,7 +18412,7 @@
     "requires_experience": false
   },
   {
-    "code": 4216,
+    "noc": 4216,
     "group": "Other instructors",
     "examples": [
       "driver's licence examiner",
@@ -18464,7 +18464,7 @@
     "requires_experience": false
   },
   {
-    "code": 4217,
+    "noc": 4217,
     "group": "Other religious occupations",
     "examples": [
       "brother/sister - religion",
@@ -18526,7 +18526,7 @@
     "requires_experience": false
   },
   {
-    "code": 4311,
+    "noc": 4311,
     "group": "Police officers (except commissioned)",
     "examples": [
       "community relations officer - police",
@@ -18626,7 +18626,7 @@
     "requires_experience": false
   },
   {
-    "code": 4312,
+    "noc": 4312,
     "group": "Firefighters",
     "examples": [
       "airport firefighter",
@@ -18683,7 +18683,7 @@
     "requires_experience": false
   },
   {
-    "code": 4313,
+    "noc": 4313,
     "group": "Non-commissioned ranks of the Canadian Armed Forces",
     "examples": [
       "able seaman - armed forces",
@@ -18745,7 +18745,7 @@
     "requires_experience": false
   },
   {
-    "code": 4411,
+    "noc": 4411,
     "group": "Home child care providers",
     "examples": [
       "babysitter",
@@ -18807,7 +18807,7 @@
     "requires_experience": false
   },
   {
-    "code": 4412,
+    "noc": 4412,
     "group": "Home support workers, housekeepers and related occupations",
     "examples": [
       "attendant for persons with disabilities - home care",
@@ -18872,7 +18872,7 @@
     "requires_experience": false
   },
   {
-    "code": 4413,
+    "noc": 4413,
     "group": "Elementary and secondary school teacher assistants",
     "examples": [
       "educational assistant",
@@ -18931,7 +18931,7 @@
     "requires_experience": false
   },
   {
-    "code": 4421,
+    "noc": 4421,
     "group": "Sheriffs and bailiffs",
     "examples": [
       "bailiff",
@@ -18980,7 +18980,7 @@
     "requires_experience": false
   },
   {
-    "code": 4422,
+    "noc": 4422,
     "group": "Correctional service officers",
     "examples": [
       "correctional facility guard",
@@ -19036,7 +19036,7 @@
     "requires_experience": false
   },
   {
-    "code": 4423,
+    "noc": 4423,
     "group": "By-law enforcement and other regulatory officers, n.e.c.",
     "examples": [
       "animal control officer",
@@ -19126,7 +19126,7 @@
     "requires_experience": false
   },
   {
-    "code": 5111,
+    "noc": 5111,
     "group": "Librarians",
     "examples": [
       "bibliographer",
@@ -19189,7 +19189,7 @@
     "requires_experience": false
   },
   {
-    "code": 5112,
+    "noc": 5112,
     "group": "Conservators and curators",
     "examples": [
       "art gallery conservator",
@@ -19273,7 +19273,7 @@
     "requires_experience": false
   },
   {
-    "code": 5113,
+    "noc": 5113,
     "group": "Archivists",
     "examples": [
       "archivist",
@@ -19308,7 +19308,7 @@
     "requires_experience": false
   },
   {
-    "code": 5121,
+    "noc": 5121,
     "group": "Authors and writers",
     "examples": [
       "advertising copywriter",
@@ -19407,7 +19407,7 @@
     "requires_experience": false
   },
   {
-    "code": 5122,
+    "noc": 5122,
     "group": "Editors",
     "examples": [
       "advertising editor",
@@ -19503,7 +19503,7 @@
     "requires_experience": true
   },
   {
-    "code": 5123,
+    "noc": 5123,
     "group": "Journalists",
     "examples": [
       "book reviewer",
@@ -19605,7 +19605,7 @@
     "requires_experience": false
   },
   {
-    "code": 5125,
+    "noc": 5125,
     "group": "Translators, terminologists and interpreters",
     "examples": [
       "community interpreter",
@@ -19702,7 +19702,7 @@
     "requires_experience": false
   },
   {
-    "code": 5131,
+    "noc": 5131,
     "group": "Producers, directors, choreographers and related occupations",
     "examples": [
       "artistic director - motion picture",
@@ -19808,7 +19808,7 @@
     "requires_experience": false
   },
   {
-    "code": 5132,
+    "noc": 5132,
     "group": "Conductors, composers and arrangers",
     "examples": [
       "arranger",
@@ -19876,7 +19876,7 @@
     "requires_experience": false
   },
   {
-    "code": 5133,
+    "noc": 5133,
     "group": "Musicians and singers",
     "examples": [
       "accompanist",
@@ -19976,7 +19976,7 @@
     "requires_experience": false
   },
   {
-    "code": 5134,
+    "noc": 5134,
     "group": "Dancers",
     "examples": [
       "ballet dancer",
@@ -20041,7 +20041,7 @@
     "requires_experience": false
   },
   {
-    "code": 5135,
+    "noc": 5135,
     "group": "Actors and comedians",
     "examples": [
       "acting teacher - private or studio",
@@ -20096,7 +20096,7 @@
     "requires_experience": false
   },
   {
-    "code": 5136,
+    "noc": 5136,
     "group": "Painters, sculptors and other visual artists",
     "examples": [
       "art teacher (except primary, secondary and post-secondary education)",
@@ -20169,7 +20169,7 @@
     "requires_experience": false
   },
   {
-    "code": 5211,
+    "noc": 5211,
     "group": "Library and public archive technicians",
     "examples": [
       "archive technician",
@@ -20215,7 +20215,7 @@
     "requires_experience": false
   },
   {
-    "code": 5212,
+    "noc": 5212,
     "group": "Technical occupations related to museums and art galleries",
     "examples": [
       "art gallery preparator",
@@ -20336,7 +20336,7 @@
     "requires_experience": false
   },
   {
-    "code": 5221,
+    "noc": 5221,
     "group": "Photographers",
     "examples": [
       "aerial photographer",
@@ -20394,7 +20394,7 @@
     "requires_experience": false
   },
   {
-    "code": 5222,
+    "noc": 5222,
     "group": "Film and video camera operators",
     "examples": [
       "assistant camera operator",
@@ -20439,7 +20439,7 @@
     "requires_experience": false
   },
   {
-    "code": 5223,
+    "noc": 5223,
     "group": "Graphic arts technicians",
     "examples": [
       "animated cartoon technician",
@@ -20523,7 +20523,7 @@
     "requires_experience": false
   },
   {
-    "code": 5224,
+    "noc": 5224,
     "group": "Broadcast technicians",
     "examples": [
       "broadcast technician",
@@ -20584,7 +20584,7 @@
     "requires_experience": false
   },
   {
-    "code": 5225,
+    "noc": 5225,
     "group": "Audio and video recording technicians",
     "examples": [
       "audiovisual (AV) technician",
@@ -20678,7 +20678,7 @@
     "requires_experience": false
   },
   {
-    "code": 5226,
+    "noc": 5226,
     "group": "Other technical and co-ordinating occupations in motion pictures, broadcasting and the performing arts",
     "examples": [
       "costumier",
@@ -20796,7 +20796,7 @@
     "requires_experience": false
   },
   {
-    "code": 5227,
+    "noc": 5227,
     "group": "Support occupations in motion pictures, broadcasting, photography and the performing arts",
     "examples": [
       "boom grip",
@@ -20899,7 +20899,7 @@
     "requires_experience": false
   },
   {
-    "code": 5231,
+    "noc": 5231,
     "group": "Announcers and other broadcasters",
     "examples": [
       "announcer",
@@ -20960,7 +20960,7 @@
     "requires_experience": false
   },
   {
-    "code": 5232,
+    "noc": 5232,
     "group": "Other performers, n.e.c.",
     "examples": [
       "acrobat",
@@ -21043,7 +21043,7 @@
     "requires_experience": false
   },
   {
-    "code": 5241,
+    "noc": 5241,
     "group": "Graphic designers and illustrators",
     "examples": [
       "3D animation artist",
@@ -21191,7 +21191,7 @@
     "requires_experience": false
   },
   {
-    "code": 5242,
+    "noc": 5242,
     "group": "Interior designers and interior decorators",
     "examples": [
       "aircraft interior designer",
@@ -21254,7 +21254,7 @@
     "requires_experience": false
   },
   {
-    "code": 5243,
+    "noc": 5243,
     "group": "Theatre, fashion, exhibit and other creative designers",
     "examples": [
       "clothing designer",
@@ -21355,7 +21355,7 @@
     "requires_experience": false
   },
   {
-    "code": 5244,
+    "noc": 5244,
     "group": "Artisans and craftspersons",
     "examples": [
       "artistic floral arranger",
@@ -21513,7 +21513,7 @@
     "requires_experience": false
   },
   {
-    "code": 5245,
+    "noc": 5245,
     "group": "Patternmakers - textile, leather and fur products",
     "examples": [
       "dress patternmaker",
@@ -21583,7 +21583,7 @@
     "requires_experience": false
   },
   {
-    "code": 5251,
+    "noc": 5251,
     "group": "Athletes",
     "examples": [
       "athlete",
@@ -21691,7 +21691,7 @@
     "requires_experience": false
   },
   {
-    "code": 5252,
+    "noc": 5252,
     "group": "Coaches",
     "examples": [
       "coach",
@@ -21788,7 +21788,7 @@
     "requires_experience": false
   },
   {
-    "code": 5253,
+    "noc": 5253,
     "group": "Sports officials and referees",
     "examples": [
       "athletics judge",
@@ -21861,7 +21861,7 @@
     "requires_experience": false
   },
   {
-    "code": 5254,
+    "noc": 5254,
     "group": "Program leaders and instructors in recreation, sport and fitness",
     "examples": [
       "aerobics instructor",
@@ -21994,7 +21994,7 @@
     "requires_experience": false
   },
   {
-    "code": 6211,
+    "noc": 6211,
     "group": "Retail sales supervisors",
     "examples": [
       "department store supervisor",
@@ -22067,7 +22067,7 @@
     "requires_experience": false
   },
   {
-    "code": 6221,
+    "noc": 6221,
     "group": "Technical sales specialists - wholesale trade",
     "examples": [
       "aircraft sales representative",
@@ -22228,7 +22228,7 @@
     "requires_experience": false
   },
   {
-    "code": 6222,
+    "noc": 6222,
     "group": "Retail and wholesale buyers",
     "examples": [
       "appliance buyer",
@@ -22296,7 +22296,7 @@
     "requires_experience": false
   },
   {
-    "code": 6231,
+    "noc": 6231,
     "group": "Insurance agents and brokers",
     "examples": [
       "insurance agent",
@@ -22341,7 +22341,7 @@
     "requires_experience": false
   },
   {
-    "code": 6232,
+    "noc": 6232,
     "group": "Real estate agents and salespersons",
     "examples": [
       "commercial real estate agent",
@@ -22384,7 +22384,7 @@
     "requires_experience": false
   },
   {
-    "code": 6235,
+    "noc": 6235,
     "group": "Financial sales representatives",
     "examples": [
       "credit officer",
@@ -22458,7 +22458,7 @@
     "requires_experience": false
   },
   {
-    "code": 6311,
+    "noc": 6311,
     "group": "Food service supervisors",
     "examples": [
       "cafeteria supervisor",
@@ -22500,7 +22500,7 @@
     "requires_experience": false
   },
   {
-    "code": 6312,
+    "noc": 6312,
     "group": "Executive housekeepers",
     "examples": [
       "assistant executive housekeeper",
@@ -22537,7 +22537,7 @@
     "requires_experience": false
   },
   {
-    "code": 6313,
+    "noc": 6313,
     "group": "Accommodation, travel, tourism and related services supervisors",
     "examples": [
       "casino dealer supervisor",
@@ -22598,7 +22598,7 @@
     "requires_experience": false
   },
   {
-    "code": 6314,
+    "noc": 6314,
     "group": "Customer and information services supervisors",
     "examples": [
       "call centre agent supervisor",
@@ -22642,7 +22642,7 @@
     "requires_experience": false
   },
   {
-    "code": 6315,
+    "noc": 6315,
     "group": "Cleaning supervisors",
     "examples": [
       "building cleaning supervisor",
@@ -22694,7 +22694,7 @@
     "requires_experience": false
   },
   {
-    "code": 6316,
+    "noc": 6316,
     "group": "Other services supervisors",
     "examples": [
       "campground supervisor",
@@ -22773,7 +22773,7 @@
     "requires_experience": false
   },
   {
-    "code": 6321,
+    "noc": 6321,
     "group": "Chefs",
     "examples": [
       "chef",
@@ -22853,7 +22853,7 @@
     "requires_experience": false
   },
   {
-    "code": 6322,
+    "noc": 6322,
     "group": "Cooks",
     "examples": [
       "apprentice cook",
@@ -22930,7 +22930,7 @@
     "requires_experience": false
   },
   {
-    "code": 6331,
+    "noc": 6331,
     "group": "Butchers, meat cutters and fishmongers - retail and wholesale",
     "examples": [
       "butcher apprentice",
@@ -22981,7 +22981,7 @@
     "requires_experience": false
   },
   {
-    "code": 6332,
+    "noc": 6332,
     "group": "Bakers",
     "examples": [
       "baker",
@@ -23049,7 +23049,7 @@
     "requires_experience": false
   },
   {
-    "code": 6341,
+    "noc": 6341,
     "group": "Hairstylists and barbers",
     "examples": [
       "barber",
@@ -23113,7 +23113,7 @@
     "requires_experience": false
   },
   {
-    "code": 6342,
+    "noc": 6342,
     "group": "Tailors, dressmakers, furriers and milliners",
     "examples": [
       "alterations dressmaker",
@@ -23184,7 +23184,7 @@
     "requires_experience": false
   },
   {
-    "code": 6343,
+    "noc": 6343,
     "group": "Shoe repairers and shoemakers",
     "examples": [
       "bootmaker",
@@ -23229,7 +23229,7 @@
     "requires_experience": false
   },
   {
-    "code": 6344,
+    "noc": 6344,
     "group": "Jewellers, jewellery and watch repairers and related occupations",
     "examples": [
       "clock repairer",
@@ -23315,7 +23315,7 @@
     "requires_experience": false
   },
   {
-    "code": 6345,
+    "noc": 6345,
     "group": "Upholsterers",
     "examples": [
       "automobile upholsterer",
@@ -23367,7 +23367,7 @@
     "requires_experience": false
   },
   {
-    "code": 6346,
+    "noc": 6346,
     "group": "Funeral directors and embalmers",
     "examples": [
       "apprentice embalmer",
@@ -23414,7 +23414,7 @@
     "requires_experience": false
   },
   {
-    "code": 6411,
+    "noc": 6411,
     "group": "Sales and account representatives - wholesale trade (non-technical)",
     "examples": [
       "advertising time sales representative",
@@ -23597,7 +23597,7 @@
     "requires_experience": false
   },
   {
-    "code": 6421,
+    "noc": 6421,
     "group": "Retail salespersons",
     "examples": [
       "audio equipment salesperson",
@@ -23844,7 +23844,7 @@
     "requires_experience": false
   },
   {
-    "code": 6511,
+    "noc": 6511,
     "group": "Maîtres d'hôtel and hosts/hostesses",
     "examples": [
       "chief host/hostess - food services",
@@ -23883,7 +23883,7 @@
     "requires_experience": false
   },
   {
-    "code": 6512,
+    "noc": 6512,
     "group": "Bartenders",
     "examples": [
       "bar attendant",
@@ -23928,7 +23928,7 @@
     "requires_experience": false
   },
   {
-    "code": 6513,
+    "noc": 6513,
     "group": "Food and beverage servers",
     "examples": [
       "banquet server",
@@ -24003,7 +24003,7 @@
     "requires_experience": false
   },
   {
-    "code": 6521,
+    "noc": 6521,
     "group": "Travel counsellors",
     "examples": [
       "reservation agent - travel agency",
@@ -24040,7 +24040,7 @@
     "requires_experience": false
   },
   {
-    "code": 6522,
+    "noc": 6522,
     "group": "Pursers and flight attendants",
     "examples": [
       "airline purser",
@@ -24086,7 +24086,7 @@
     "requires_experience": false
   },
   {
-    "code": 6523,
+    "noc": 6523,
     "group": "Airline ticket and service agents",
     "examples": [
       "airline baggage agent",
@@ -24168,7 +24168,7 @@
     "requires_experience": false
   },
   {
-    "code": 6524,
+    "noc": 6524,
     "group": "Ground and water transport ticket agents, cargo service representatives and related clerks",
     "examples": [
       "bus ticket agent",
@@ -24249,7 +24249,7 @@
     "requires_experience": false
   },
   {
-    "code": 6525,
+    "noc": 6525,
     "group": "Hotel front desk clerks",
     "examples": [
       "guest services agent - hotel",
@@ -24298,7 +24298,7 @@
     "requires_experience": false
   },
   {
-    "code": 6531,
+    "noc": 6531,
     "group": "Tour and travel guides",
     "examples": [
       "adventure travel site interpreter",
@@ -24352,7 +24352,7 @@
     "requires_experience": false
   },
   {
-    "code": 6532,
+    "noc": 6532,
     "group": "Outdoor sport and recreational guides",
     "examples": [
       "canoeing guide",
@@ -24414,7 +24414,7 @@
     "requires_experience": false
   },
   {
-    "code": 6533,
+    "noc": 6533,
     "group": "Casino occupations",
     "examples": [
       "croupier",
@@ -24467,7 +24467,7 @@
     "requires_experience": false
   },
   {
-    "code": 6541,
+    "noc": 6541,
     "group": "Security guards and related security service occupations",
     "examples": [
       "airport security guard",
@@ -24594,7 +24594,7 @@
     "requires_experience": false
   },
   {
-    "code": 6551,
+    "noc": 6551,
     "group": "Customer services representatives - financial institutions",
     "examples": [
       "bank teller",
@@ -24636,7 +24636,7 @@
     "requires_experience": false
   },
   {
-    "code": 6552,
+    "noc": 6552,
     "group": "Other customer and information services representatives",
     "examples": [
       "accounts information clerk",
@@ -24744,7 +24744,7 @@
     "requires_experience": false
   },
   {
-    "code": 6561,
+    "noc": 6561,
     "group": "Image, social and other personal consultants",
     "examples": [
       "etiquette consultant",
@@ -24803,7 +24803,7 @@
     "requires_experience": false
   },
   {
-    "code": 6562,
+    "noc": 6562,
     "group": "Estheticians, electrologists and related occupations",
     "examples": [
       "beauty treatment operator",
@@ -24885,7 +24885,7 @@
     "requires_experience": false
   },
   {
-    "code": 6563,
+    "noc": 6563,
     "group": "Pet groomers and animal care workers",
     "examples": [
       "animal care worker (except farm)",
@@ -24949,7 +24949,7 @@
     "requires_experience": false
   },
   {
-    "code": 6564,
+    "noc": 6564,
     "group": "Other personal service occupations",
     "examples": [
       "astrologer",
@@ -25002,7 +25002,7 @@
     "requires_experience": false
   },
   {
-    "code": 6611,
+    "noc": 6611,
     "group": "Cashiers",
     "examples": [
       "box office cashier",
@@ -25064,7 +25064,7 @@
     "requires_experience": false
   },
   {
-    "code": 6621,
+    "noc": 6621,
     "group": "Service station attendants",
     "examples": [
       "gas station attendant (except self-serve)",
@@ -25112,7 +25112,7 @@
     "requires_experience": false
   },
   {
-    "code": 6622,
+    "noc": 6622,
     "group": "Store shelf stockers, clerks and order fillers",
     "examples": [
       "bag clerk",
@@ -25175,7 +25175,7 @@
     "requires_experience": false
   },
   {
-    "code": 6623,
+    "noc": 6623,
     "group": "Other sales related occupations",
     "examples": [
       "canvasser - retail",
@@ -25242,7 +25242,7 @@
     "requires_experience": false
   },
   {
-    "code": 6711,
+    "noc": 6711,
     "group": "Food counter attendants, kitchen helpers and related support occupations",
     "examples": [
       "bartender helper",
@@ -25364,7 +25364,7 @@
     "requires_experience": false
   },
   {
-    "code": 6721,
+    "noc": 6721,
     "group": "Support occupations in accommodation, travel and facilities set-up services",
     "examples": [
       "baggage porter",
@@ -25436,7 +25436,7 @@
     "requires_experience": false
   },
   {
-    "code": 6722,
+    "noc": 6722,
     "group": "Operators and attendants in amusement, recreation and sport",
     "examples": [
       "amusement attraction operator",
@@ -25573,7 +25573,7 @@
     "requires_experience": false
   },
   {
-    "code": 6731,
+    "noc": 6731,
     "group": "Light duty cleaners",
     "examples": [
       "cleaner",
@@ -25655,7 +25655,7 @@
     "requires_experience": false
   },
   {
-    "code": 6732,
+    "noc": 6732,
     "group": "Specialized cleaners",
     "examples": [
       "auto detailer",
@@ -25749,7 +25749,7 @@
     "requires_experience": false
   },
   {
-    "code": 6733,
+    "noc": 6733,
     "group": "Janitors, caretakers and building superintendents",
     "examples": [
       "building caretaker",
@@ -25817,7 +25817,7 @@
     "requires_experience": false
   },
   {
-    "code": 6741,
+    "noc": 6741,
     "group": "Dry cleaning, laundry and related occupations",
     "examples": [
       "assembler - laundry and dry cleaning",
@@ -25960,7 +25960,7 @@
     "requires_experience": false
   },
   {
-    "code": 6742,
+    "noc": 6742,
     "group": "Other service support occupations, n.e.c.",
     "examples": [
       "beauty salon attendant",
@@ -26066,7 +26066,7 @@
     "requires_experience": false
   },
   {
-    "code": 7201,
+    "noc": 7201,
     "group": "Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations",
     "examples": [
       "automotive machine shop foreman/woman",
@@ -26191,7 +26191,7 @@
     "requires_experience": false
   },
   {
-    "code": 7202,
+    "noc": 7202,
     "group": "Contractors and supervisors, electrical trades and telecommunications occupations",
     "examples": [
       "cable maintenance and repair supervisor",
@@ -26320,7 +26320,7 @@
     "requires_experience": false
   },
   {
-    "code": 7203,
+    "noc": 7203,
     "group": "Contractors and supervisors, pipefitting trades",
     "examples": [
       "gas fitters foreman/woman",
@@ -26379,7 +26379,7 @@
     "requires_experience": false
   },
   {
-    "code": 7204,
+    "noc": 7204,
     "group": "Contractors and supervisors, carpentry trades",
     "examples": [
       "cabinetmaking contractor",
@@ -26440,7 +26440,7 @@
     "requires_experience": false
   },
   {
-    "code": 7205,
+    "noc": 7205,
     "group": "Contractors and supervisors, other construction trades, installers, repairers and servicers",
     "examples": [
       "bicycle repair shop supervisor",
@@ -26619,7 +26619,7 @@
     "requires_experience": true
   },
   {
-    "code": 7231,
+    "noc": 7231,
     "group": "Machinists and machining and tooling inspectors",
     "examples": [
       "automotive machinist",
@@ -26708,7 +26708,7 @@
     "requires_experience": false
   },
   {
-    "code": 7232,
+    "noc": 7232,
     "group": "Tool and die makers",
     "examples": [
       "die finisher",
@@ -26824,7 +26824,7 @@
     "requires_experience": false
   },
   {
-    "code": 7233,
+    "noc": 7233,
     "group": "Sheet metal workers",
     "examples": [
       "apprentice sheet metal worker",
@@ -26892,7 +26892,7 @@
     "requires_experience": false
   },
   {
-    "code": 7234,
+    "noc": 7234,
     "group": "Boilermakers",
     "examples": [
       "boiler fitter",
@@ -26945,7 +26945,7 @@
     "requires_experience": false
   },
   {
-    "code": 7235,
+    "noc": 7235,
     "group": "Structural metal and platework fabricators and fitters",
     "examples": [
       "metal fabricator",
@@ -27035,7 +27035,7 @@
     "requires_experience": false
   },
   {
-    "code": 7236,
+    "noc": 7236,
     "group": "Ironworkers",
     "examples": [
       "ironworker",
@@ -27107,7 +27107,7 @@
     "requires_experience": false
   },
   {
-    "code": 7237,
+    "noc": 7237,
     "group": "Welders and related machine operators",
     "examples": [
       "aviation welding technician",
@@ -27278,7 +27278,7 @@
     "requires_experience": false
   },
   {
-    "code": 7241,
+    "noc": 7241,
     "group": "Electricians (except industrial and power system)",
     "examples": [
       "apprentice electrician",
@@ -27330,7 +27330,7 @@
     "requires_experience": false
   },
   {
-    "code": 7242,
+    "noc": 7242,
     "group": "Industrial electricians",
     "examples": [
       "industrial electrician",
@@ -27392,7 +27392,7 @@
     "requires_experience": false
   },
   {
-    "code": 7243,
+    "noc": 7243,
     "group": "Power system electricians",
     "examples": [
       "apprentice power system electrician",
@@ -27432,7 +27432,7 @@
     "requires_experience": false
   },
   {
-    "code": 7244,
+    "noc": 7244,
     "group": "Electrical power line and cable workers",
     "examples": [
       "apprentice lineman/woman - electric power systems",
@@ -27528,7 +27528,7 @@
     "requires_experience": false
   },
   {
-    "code": 7245,
+    "noc": 7245,
     "group": "Telecommunications line and cable workers",
     "examples": [
       "apprentice lineman/woman - telecommunications",
@@ -27607,7 +27607,7 @@
     "requires_experience": false
   },
   {
-    "code": 7246,
+    "noc": 7246,
     "group": "Telecommunications installation and repair workers",
     "examples": [
       "apprentice communication electrician - switching",
@@ -27779,7 +27779,7 @@
     "requires_experience": false
   },
   {
-    "code": 7247,
+    "noc": 7247,
     "group": "Cable television service and maintenance technicians",
     "examples": [
       "cable television installation technician",
@@ -27832,7 +27832,7 @@
     "requires_experience": false
   },
   {
-    "code": 7251,
+    "noc": 7251,
     "group": "Plumbers",
     "examples": [
       "maintenance plumber",
@@ -27875,7 +27875,7 @@
     "requires_experience": false
   },
   {
-    "code": 7252,
+    "noc": 7252,
     "group": "Steamfitters, pipefitters and sprinkler system installers",
     "examples": [
       "apprentice pipefitter-steamfitter",
@@ -27963,7 +27963,7 @@
     "requires_experience": false
   },
   {
-    "code": 7253,
+    "noc": 7253,
     "group": "Gas fitters",
     "examples": [
       "gas fitter",
@@ -28015,7 +28015,7 @@
     "requires_experience": false
   },
   {
-    "code": 7271,
+    "noc": 7271,
     "group": "Carpenters",
     "examples": [
       "apprentice carpenter",
@@ -28114,7 +28114,7 @@
     "requires_experience": false
   },
   {
-    "code": 7272,
+    "noc": 7272,
     "group": "Cabinetmakers",
     "examples": [
       "cabinetmaker",
@@ -28161,7 +28161,7 @@
     "requires_experience": false
   },
   {
-    "code": 7281,
+    "noc": 7281,
     "group": "Bricklayers",
     "examples": [
       "apprentice bricklayer",
@@ -28244,7 +28244,7 @@
     "requires_experience": false
   },
   {
-    "code": 7282,
+    "noc": 7282,
     "group": "Concrete finishers",
     "examples": [
       "cement finisher apprentice",
@@ -28295,7 +28295,7 @@
     "requires_experience": false
   },
   {
-    "code": 7283,
+    "noc": 7283,
     "group": "Tilesetters",
     "examples": [
       "apprentice tilesetter",
@@ -28362,7 +28362,7 @@
     "requires_experience": false
   },
   {
-    "code": 7284,
+    "noc": 7284,
     "group": "Plasterers, drywall installers and finishers and lathers",
     "examples": [
       "acoustical ceiling installer",
@@ -28474,7 +28474,7 @@
     "requires_experience": false
   },
   {
-    "code": 7291,
+    "noc": 7291,
     "group": "Roofers and shinglers",
     "examples": [
       "apprentice roofer",
@@ -28546,7 +28546,7 @@
     "requires_experience": false
   },
   {
-    "code": 7292,
+    "noc": 7292,
     "group": "Glaziers",
     "examples": [
       "glazier",
@@ -28607,7 +28607,7 @@
     "requires_experience": false
   },
   {
-    "code": 7293,
+    "noc": 7293,
     "group": "Insulators",
     "examples": [
       "boiler and pipe insulator",
@@ -28665,7 +28665,7 @@
     "requires_experience": false
   },
   {
-    "code": 7294,
+    "noc": 7294,
     "group": "Painters and decorators (except interior decorators)",
     "examples": [
       "construction painter",
@@ -28721,7 +28721,7 @@
     "requires_experience": false
   },
   {
-    "code": 7295,
+    "noc": 7295,
     "group": "Floor covering installers",
     "examples": [
       "carpet layer",
@@ -28785,7 +28785,7 @@
     "requires_experience": false
   },
   {
-    "code": 7301,
+    "noc": 7301,
     "group": "Contractors and supervisors, mechanic trades",
     "examples": [
       "air conditioning and refrigeration mechanic foreman/woman",
@@ -28984,7 +28984,7 @@
     "requires_experience": true
   },
   {
-    "code": 7302,
+    "noc": 7302,
     "group": "Contractors and supervisors, heavy equipment operator crews",
     "examples": [
       "demolition foreman/woman",
@@ -29135,7 +29135,7 @@
     "requires_experience": true
   },
   {
-    "code": 7303,
+    "noc": 7303,
     "group": "Supervisors, printing and related occupations",
     "examples": [
       "bindery foreman/woman - printing",
@@ -29236,7 +29236,7 @@
     "requires_experience": true
   },
   {
-    "code": 7304,
+    "noc": 7304,
     "group": "Supervisors, railway transport operations",
     "examples": [
       "freight train road foreman/woman",
@@ -29280,7 +29280,7 @@
     "requires_experience": false
   },
   {
-    "code": 7305,
+    "noc": 7305,
     "group": "Supervisors, motor transport and other ground transit operators",
     "examples": [
       "bus dispatcher",
@@ -29355,7 +29355,7 @@
     "requires_experience": true
   },
   {
-    "code": 7311,
+    "noc": 7311,
     "group": "Construction millwrights and industrial mechanics",
     "examples": [
       "card fixer",
@@ -29597,7 +29597,7 @@
     "requires_experience": false
   },
   {
-    "code": 7312,
+    "noc": 7312,
     "group": "Heavy-duty equipment mechanics",
     "examples": [
       "agricultural equipment technician",
@@ -29692,7 +29692,7 @@
     "requires_experience": false
   },
   {
-    "code": 7313,
+    "noc": 7313,
     "group": "Heating, refrigeration and air conditioning mechanics",
     "examples": [
       "central air conditioning mechanic",
@@ -29754,7 +29754,7 @@
     "requires_experience": false
   },
   {
-    "code": 7314,
+    "noc": 7314,
     "group": "Railway carmen/women",
     "examples": [
       "rail vehicle mechanic",
@@ -29805,7 +29805,7 @@
     "requires_experience": false
   },
   {
-    "code": 7315,
+    "noc": 7315,
     "group": "Aircraft mechanics and aircraft inspectors",
     "examples": [
       "aircraft gas turbine engine technician",
@@ -29934,7 +29934,7 @@
     "requires_experience": false
   },
   {
-    "code": 7316,
+    "noc": 7316,
     "group": "Machine fitters",
     "examples": [
       "aircraft engine fitter",
@@ -30000,7 +30000,7 @@
     "requires_experience": false
   },
   {
-    "code": 7318,
+    "noc": 7318,
     "group": "Elevator constructors and mechanics",
     "examples": [
       "elevator constructor",
@@ -30056,7 +30056,7 @@
     "requires_experience": false
   },
   {
-    "code": 7321,
+    "noc": 7321,
     "group": "Automotive service technicians, truck and bus mechanics and mechanical repairers",
     "examples": [
       "apprentice motor vehicle mechanic",
@@ -30203,7 +30203,7 @@
     "requires_experience": false
   },
   {
-    "code": 7322,
+    "noc": 7322,
     "group": "Motor vehicle body repairers",
     "examples": [
       "autobody repairer",
@@ -30305,7 +30305,7 @@
     "requires_experience": false
   },
   {
-    "code": 7331,
+    "noc": 7331,
     "group": "Oil and solid fuel heating mechanics",
     "examples": [
       "furnace installer and repairer (except gas)",
@@ -30373,7 +30373,7 @@
     "requires_experience": false
   },
   {
-    "code": 7332,
+    "noc": 7332,
     "group": "Appliance servicers and repairers",
     "examples": [
       "appliance service technician",
@@ -30479,7 +30479,7 @@
     "requires_experience": false
   },
   {
-    "code": 7333,
+    "noc": 7333,
     "group": "Electrical mechanics",
     "examples": [
       "armature winder repairer",
@@ -30565,7 +30565,7 @@
     "requires_experience": false
   },
   {
-    "code": 7334,
+    "noc": 7334,
     "group": "Motorcycle, all-terrain vehicle and other related mechanics",
     "examples": [
       "all-terrain vehicle repairer",
@@ -30620,7 +30620,7 @@
     "requires_experience": false
   },
   {
-    "code": 7335,
+    "noc": 7335,
     "group": "Other small engine and small equipment repairers",
     "examples": [
       "air-cooled engine mechanic",
@@ -30667,7 +30667,7 @@
     "requires_experience": false
   },
   {
-    "code": 7361,
+    "noc": 7361,
     "group": "Railway and yard locomotive engineers",
     "examples": [
       "locomotive engineer - railway",
@@ -30714,7 +30714,7 @@
     "requires_experience": false
   },
   {
-    "code": 7362,
+    "noc": 7362,
     "group": "Railway conductors and brakemen/women",
     "examples": [
       "brakeman/woman",
@@ -30773,7 +30773,7 @@
     "requires_experience": false
   },
   {
-    "code": 7371,
+    "noc": 7371,
     "group": "Crane operators",
     "examples": [
       "boom truck crane operator",
@@ -30869,7 +30869,7 @@
     "requires_experience": false
   },
   {
-    "code": 7372,
+    "noc": 7372,
     "group": "Drillers and blasters - surface mining, quarrying and construction",
     "examples": [
       "blaster - quarrying",
@@ -30927,7 +30927,7 @@
     "requires_experience": false
   },
   {
-    "code": 7373,
+    "noc": 7373,
     "group": "Water well drillers",
     "examples": [
       "cable tool driller - water well drilling",
@@ -30964,7 +30964,7 @@
     "requires_experience": false
   },
   {
-    "code": 7381,
+    "noc": 7381,
     "group": "Printing press operators",
     "examples": [
       "apprentice pressman/woman",
@@ -31075,7 +31075,7 @@
     "requires_experience": false
   },
   {
-    "code": 7384,
+    "noc": 7384,
     "group": "Other trades and related occupations, n.e.c.",
     "examples": [
       "aircraft patternmaker",
@@ -31229,7 +31229,7 @@
     "requires_experience": false
   },
   {
-    "code": 7441,
+    "noc": 7441,
     "group": "Residential and commercial installers and servicers",
     "examples": [
       "aluminum window installer",
@@ -31401,7 +31401,7 @@
     "requires_experience": false
   },
   {
-    "code": 7442,
+    "noc": 7442,
     "group": "Waterworks and gas maintenance workers",
     "examples": [
       "gas leak locator",
@@ -31471,7 +31471,7 @@
     "requires_experience": false
   },
   {
-    "code": 7444,
+    "noc": 7444,
     "group": "Pest controllers and fumigators",
     "examples": [
       "animal control trapper",
@@ -31516,7 +31516,7 @@
     "requires_experience": false
   },
   {
-    "code": 7445,
+    "noc": 7445,
     "group": "Other repairers and servicers",
     "examples": [
       "bicycle repairer",
@@ -31653,7 +31653,7 @@
     "requires_experience": false
   },
   {
-    "code": 7451,
+    "noc": 7451,
     "group": "Longshore workers",
     "examples": [
       "dockworker",
@@ -31700,7 +31700,7 @@
     "requires_experience": false
   },
   {
-    "code": 7452,
+    "noc": 7452,
     "group": "Material handlers",
     "examples": [
       "bin filler",
@@ -31868,7 +31868,7 @@
     "requires_experience": false
   },
   {
-    "code": 7511,
+    "noc": 7511,
     "group": "Transport truck drivers",
     "examples": [
       "bulk goods truck driver",
@@ -31971,7 +31971,7 @@
     "requires_experience": false
   },
   {
-    "code": 7512,
+    "noc": 7512,
     "group": "Bus drivers, subway operators and other transit operators",
     "examples": [
       "bus driver",
@@ -32051,7 +32051,7 @@
     "requires_experience": false
   },
   {
-    "code": 7513,
+    "noc": 7513,
     "group": "Taxi and limousine drivers and chauffeurs",
     "examples": [
       "airport limousine driver",
@@ -32100,7 +32100,7 @@
     "requires_experience": false
   },
   {
-    "code": 7514,
+    "noc": 7514,
     "group": "Delivery and courier service drivers",
     "examples": [
       "bread deliverer",
@@ -32182,7 +32182,7 @@
     "requires_experience": false
   },
   {
-    "code": 7521,
+    "noc": 7521,
     "group": "Heavy equipment operators (except crane)",
     "examples": [
       "backhoe operator",
@@ -32322,7 +32322,7 @@
     "requires_experience": false
   },
   {
-    "code": 7522,
+    "noc": 7522,
     "group": "Public works maintenance equipment operators and related workers",
     "examples": [
       "garbage truck driver",
@@ -32409,7 +32409,7 @@
     "requires_experience": false
   },
   {
-    "code": 7531,
+    "noc": 7531,
     "group": "Railway yard and track maintenance workers",
     "examples": [
       "ballast regulator operator - railway",
@@ -32560,7 +32560,7 @@
     "requires_experience": false
   },
   {
-    "code": 7532,
+    "noc": 7532,
     "group": "Water transport deck and engine room crew",
     "examples": [
       "able seaman/woman (except armed forces)",
@@ -32633,7 +32633,7 @@
     "requires_experience": false
   },
   {
-    "code": 7533,
+    "noc": 7533,
     "group": "Boat and cable ferry operators and related occupations",
     "examples": [
       "bridgemaster",
@@ -32732,7 +32732,7 @@
     "requires_experience": false
   },
   {
-    "code": 7534,
+    "noc": 7534,
     "group": "Air transport ramp attendants",
     "examples": [
       "aircraft groomer",
@@ -32777,7 +32777,7 @@
     "requires_experience": false
   },
   {
-    "code": 7535,
+    "noc": 7535,
     "group": "Other automotive mechanical installers and servicers",
     "examples": [
       "crane greaser",
@@ -32848,7 +32848,7 @@
     "requires_experience": false
   },
   {
-    "code": 7611,
+    "noc": 7611,
     "group": "Construction trades helpers and labourers",
     "examples": [
       "asphalt spreader",
@@ -33162,7 +33162,7 @@
     "requires_experience": false
   },
   {
-    "code": 7612,
+    "noc": 7612,
     "group": "Other trades helpers and labourers",
     "examples": [
       "aerial spraying assistant",
@@ -33300,7 +33300,7 @@
     "requires_experience": false
   },
   {
-    "code": 7621,
+    "noc": 7621,
     "group": "Public works and maintenance labourers",
     "examples": [
       "helper - garbage collection",
@@ -33366,7 +33366,7 @@
     "requires_experience": false
   },
   {
-    "code": 7622,
+    "noc": 7622,
     "group": "Railway and motor transport labourers",
     "examples": [
       "car checker - railway",
@@ -33432,7 +33432,7 @@
     "requires_experience": false
   },
   {
-    "code": 8211,
+    "noc": 8211,
     "group": "Supervisors, logging and forestry",
     "examples": [
       "forest operations supervisor",
@@ -33495,7 +33495,7 @@
     "requires_experience": true
   },
   {
-    "code": 8221,
+    "noc": 8221,
     "group": "Supervisors, mining and quarrying",
     "examples": [
       "fill foreman/woman - underground mining",
@@ -33573,7 +33573,7 @@
     "requires_experience": true
   },
   {
-    "code": 8222,
+    "noc": 8222,
     "group": "Contractors and supervisors, oil and gas drilling and services",
     "examples": [
       "fracturing supervisor",
@@ -33637,7 +33637,7 @@
     "requires_experience": false
   },
   {
-    "code": 8231,
+    "noc": 8231,
     "group": "Underground production and development miners",
     "examples": [
       "blaster - underground mining",
@@ -33761,7 +33761,7 @@
     "requires_experience": false
   },
   {
-    "code": 8232,
+    "noc": 8232,
     "group": "Oil and gas well drillers, servicers, testers and related workers",
     "examples": [
       "assistant driller - oil and gas well drilling",
@@ -33845,7 +33845,7 @@
     "requires_experience": false
   },
   {
-    "code": 8241,
+    "noc": 8241,
     "group": "Logging machinery operators",
     "examples": [
       "chipping machine operator",
@@ -33936,7 +33936,7 @@
     "requires_experience": false
   },
   {
-    "code": 8252,
+    "noc": 8252,
     "group": "Agricultural service contractors, farm supervisors and specialized livestock workers",
     "examples": [
       "artificial insemination service contractor",
@@ -34108,7 +34108,7 @@
     "requires_experience": false
   },
   {
-    "code": 8255,
+    "noc": 8255,
     "group": "Contractors and supervisors, landscaping, grounds maintenance and horticulture services",
     "examples": [
       "greenhouse supervisor",
@@ -34199,7 +34199,7 @@
     "requires_experience": true
   },
   {
-    "code": 8261,
+    "noc": 8261,
     "group": "Fishing masters and officers",
     "examples": [
       "fishing vessel boatswain",
@@ -34246,7 +34246,7 @@
     "requires_experience": true
   },
   {
-    "code": 8262,
+    "noc": 8262,
     "group": "Fishermen/women",
     "examples": [
       "fisherman/woman",
@@ -34316,7 +34316,7 @@
     "requires_experience": true
   },
   {
-    "code": 8411,
+    "noc": 8411,
     "group": "Underground mine service and support workers",
     "examples": [
       "backfiller - underground mining",
@@ -34436,7 +34436,7 @@
     "requires_experience": false
   },
   {
-    "code": 8412,
+    "noc": 8412,
     "group": "Oil and gas well drilling and related workers and services operators",
     "examples": [
       "acidizer - oil field services",
@@ -34523,7 +34523,7 @@
     "requires_experience": true
   },
   {
-    "code": 8421,
+    "noc": 8421,
     "group": "Chain saw and skidder operators",
     "examples": [
       "bucker",
@@ -34588,7 +34588,7 @@
     "requires_experience": false
   },
   {
-    "code": 8422,
+    "noc": 8422,
     "group": "Silviculture and forestry workers",
     "examples": [
       "clearing saw operator - forestry",
@@ -34650,7 +34650,7 @@
     "requires_experience": false
   },
   {
-    "code": 8431,
+    "noc": 8431,
     "group": "General farm workers",
     "examples": [
       "beef cattle farm worker",
@@ -34805,7 +34805,7 @@
     "requires_experience": false
   },
   {
-    "code": 8432,
+    "noc": 8432,
     "group": "Nursery and greenhouse workers",
     "examples": [
       "forest nursery worker",
@@ -34855,7 +34855,7 @@
     "requires_experience": false
   },
   {
-    "code": 8441,
+    "noc": 8441,
     "group": "Fishing vessel deckhands",
     "examples": [
       "fishing vessel crewman/woman",
@@ -34901,7 +34901,7 @@
     "requires_experience": false
   },
   {
-    "code": 8442,
+    "noc": 8442,
     "group": "Trappers and hunters",
     "examples": [
       "fur trapper",
@@ -34952,7 +34952,7 @@
     "requires_experience": false
   },
   {
-    "code": 8611,
+    "noc": 8611,
     "group": "Harvesting labourers",
     "examples": [
       "apple picker",
@@ -35008,7 +35008,7 @@
     "requires_experience": false
   },
   {
-    "code": 8612,
+    "noc": 8612,
     "group": "Landscaping and grounds maintenance labourers",
     "examples": [
       "bulb planter - landscaping",
@@ -35081,7 +35081,7 @@
     "requires_experience": false
   },
   {
-    "code": 8613,
+    "noc": 8613,
     "group": "Aquaculture and marine harvest labourers",
     "examples": [
       "aquaculture support worker",
@@ -35153,7 +35153,7 @@
     "requires_experience": false
   },
   {
-    "code": 8614,
+    "noc": 8614,
     "group": "Mine labourers",
     "examples": [
       "chute puller",
@@ -35210,7 +35210,7 @@
     "requires_experience": false
   },
   {
-    "code": 8615,
+    "noc": 8615,
     "group": "Oil and gas drilling, servicing and related labourers",
     "examples": [
       "floorman/woman - oil and gas drilling",
@@ -35287,7 +35287,7 @@
     "requires_experience": false
   },
   {
-    "code": 8616,
+    "noc": 8616,
     "group": "Logging and forestry labourers",
     "examples": [
       "chokerman/woman",
@@ -35338,7 +35338,7 @@
     "requires_experience": false
   },
   {
-    "code": 9211,
+    "noc": 9211,
     "group": "Supervisors, mineral and metal processing",
     "examples": [
       "blast furnace foreman/woman",
@@ -35473,7 +35473,7 @@
     "requires_experience": true
   },
   {
-    "code": 9212,
+    "noc": 9212,
     "group": "Supervisors, petroleum, gas and chemical processing and utilities",
     "examples": [
       "chemical processing supervisor",
@@ -35588,7 +35588,7 @@
     "requires_experience": true
   },
   {
-    "code": 9213,
+    "noc": 9213,
     "group": "Supervisors, food and beverage processing",
     "examples": [
       "bottling supervisor - food and beverage processing",
@@ -35723,7 +35723,7 @@
     "requires_experience": false
   },
   {
-    "code": 9214,
+    "noc": 9214,
     "group": "Supervisors, plastic and rubber products manufacturing",
     "examples": [
       "blow moulding foreman/woman - rubber and plastic manufacturing",
@@ -35848,7 +35848,7 @@
     "requires_experience": true
   },
   {
-    "code": 9215,
+    "noc": 9215,
     "group": "Supervisors, forest products processing",
     "examples": [
       "coating room foreman/woman - pulp and paper",
@@ -35940,7 +35940,7 @@
     "requires_experience": true
   },
   {
-    "code": 9217,
+    "noc": 9217,
     "group": "Supervisors, textile, fabric, fur and leather products processing and manufacturing",
     "examples": [
       "boot and shoe foreman/woman",
@@ -36090,7 +36090,7 @@
     "requires_experience": true
   },
   {
-    "code": 9221,
+    "noc": 9221,
     "group": "Supervisors, motor vehicle assembling",
     "examples": [
       "area co-ordinator - motor vehicle manufacturing",
@@ -36145,7 +36145,7 @@
     "requires_experience": false
   },
   {
-    "code": 9222,
+    "noc": 9222,
     "group": "Supervisors, electronics manufacturing",
     "examples": [
       "assembly and testing supervisor - electronic equipment manufacturing",
@@ -36220,7 +36220,7 @@
     "requires_experience": true
   },
   {
-    "code": 9223,
+    "noc": 9223,
     "group": "Supervisors, electrical products manufacturing",
     "examples": [
       "electrical appliance assembly foreman/woman",
@@ -36265,7 +36265,7 @@
     "requires_experience": false
   },
   {
-    "code": 9224,
+    "noc": 9224,
     "group": "Supervisors, furniture and fixtures manufacturing",
     "examples": [
       "desk assembly foreman/woman",
@@ -36328,7 +36328,7 @@
     "requires_experience": false
   },
   {
-    "code": 9226,
+    "noc": 9226,
     "group": "Supervisors, other mechanical and metal products manufacturing",
     "examples": [
       "aircraft assembly foreman/woman",
@@ -36436,7 +36436,7 @@
     "requires_experience": true
   },
   {
-    "code": 9227,
+    "noc": 9227,
     "group": "Supervisors, other products manufacturing and assembly",
     "examples": [
       "bicycle assembly foreman/woman",
@@ -36526,7 +36526,7 @@
     "requires_experience": true
   },
   {
-    "code": 9231,
+    "noc": 9231,
     "group": "Central control and process operators, mineral and metal processing",
     "examples": [
       "blast furnace operator",
@@ -36626,7 +36626,7 @@
     "requires_experience": false
   },
   {
-    "code": 9232,
+    "noc": 9232,
     "group": "Central control and process operators, petroleum, gas and chemical processing",
     "examples": [
       "acid plant operator",
@@ -36807,7 +36807,7 @@
     "requires_experience": false
   },
   {
-    "code": 9235,
+    "noc": 9235,
     "group": "Pulping, papermaking and coating control operators",
     "examples": [
       "bleach plant operator - pulp and paper",
@@ -36855,7 +36855,7 @@
     "requires_experience": true
   },
   {
-    "code": 9241,
+    "noc": 9241,
     "group": "Power engineers and power systems operators",
     "examples": [
       "apprentice power dispatcher",
@@ -37015,7 +37015,7 @@
     "requires_experience": false
   },
   {
-    "code": 9243,
+    "noc": 9243,
     "group": "Water and waste treatment plant operators",
     "examples": [
       "environmental systems operator - water treatment",
@@ -37096,7 +37096,7 @@
     "requires_experience": false
   },
   {
-    "code": 9411,
+    "noc": 9411,
     "group": "Machine operators, mineral and metal processing",
     "examples": [
       "aluminum classifier",
@@ -37424,7 +37424,7 @@
     "requires_experience": false
   },
   {
-    "code": 9412,
+    "noc": 9412,
     "group": "Foundry workers",
     "examples": [
       "bench moulder",
@@ -37573,7 +37573,7 @@
     "requires_experience": false
   },
   {
-    "code": 9413,
+    "noc": 9413,
     "group": "Glass forming and finishing machine operators and glass cutters",
     "examples": [
       "bottle machine operator - glass products manufacturing",
@@ -37730,7 +37730,7 @@
     "requires_experience": false
   },
   {
-    "code": 9414,
+    "noc": 9414,
     "group": "Concrete, clay and stone forming operators",
     "examples": [
       "asbestos shingle presser",
@@ -38037,7 +38037,7 @@
     "requires_experience": false
   },
   {
-    "code": 9415,
+    "noc": 9415,
     "group": "Inspectors and testers, mineral and metal processing",
     "examples": [
       "asbestos grader",
@@ -38139,7 +38139,7 @@
     "requires_experience": false
   },
   {
-    "code": 9416,
+    "noc": 9416,
     "group": "Metalworking and forging machine operators",
     "examples": [
       "bending press operator - metal fabrication",
@@ -38355,7 +38355,7 @@
     "requires_experience": false
   },
   {
-    "code": 9417,
+    "noc": 9417,
     "group": "Machining tool operators",
     "examples": [
       "aircraft parts etcher",
@@ -38585,7 +38585,7 @@
     "requires_experience": false
   },
   {
-    "code": 9418,
+    "noc": 9418,
     "group": "Other metal products machine operators",
     "examples": [
       "bolt machine operator",
@@ -38805,7 +38805,7 @@
     "requires_experience": false
   },
   {
-    "code": 9421,
+    "noc": 9421,
     "group": "Chemical plant machine operators",
     "examples": [
       "batch mixer - chemical processing",
@@ -39034,7 +39034,7 @@
     "requires_experience": false
   },
   {
-    "code": 9422,
+    "noc": 9422,
     "group": "Plastics processing machine operators",
     "examples": [
       "bag machine operator",
@@ -39202,7 +39202,7 @@
     "requires_experience": false
   },
   {
-    "code": 9423,
+    "noc": 9423,
     "group": "Rubber processing machine operators and related workers",
     "examples": [
       "banbury operator - rubber products manufacturing",
@@ -39528,7 +39528,7 @@
     "requires_experience": false
   },
   {
-    "code": 9431,
+    "noc": 9431,
     "group": "Sawmill machine operators",
     "examples": [
       "circular saw operator",
@@ -39636,7 +39636,7 @@
     "requires_experience": false
   },
   {
-    "code": 9432,
+    "noc": 9432,
     "group": "Pulp mill machine operators",
     "examples": [
       "assistant bleacher operator - pulp and paper",
@@ -39759,7 +39759,7 @@
     "requires_experience": false
   },
   {
-    "code": 9433,
+    "noc": 9433,
     "group": "Papermaking and finishing machine operators",
     "examples": [
       "assistant coating operator - pulp and paper",
@@ -39843,7 +39843,7 @@
     "requires_experience": false
   },
   {
-    "code": 9434,
+    "noc": 9434,
     "group": "Other wood processing machine operators",
     "examples": [
       "barker operator",
@@ -39961,7 +39961,7 @@
     "requires_experience": false
   },
   {
-    "code": 9435,
+    "noc": 9435,
     "group": "Paper converting machine operators",
     "examples": [
       "box maker operator",
@@ -40105,7 +40105,7 @@
     "requires_experience": false
   },
   {
-    "code": 9436,
+    "noc": 9436,
     "group": "Lumber graders and other wood processing inspectors and graders",
     "examples": [
       "grader - wood processing",
@@ -40175,7 +40175,7 @@
     "requires_experience": false
   },
   {
-    "code": 9437,
+    "noc": 9437,
     "group": "Woodworking machine operators",
     "examples": [
       "boring machine operator - woodworking",
@@ -40476,7 +40476,7 @@
     "requires_experience": false
   },
   {
-    "code": 9441,
+    "noc": 9441,
     "group": "Textile fibre and yarn, hide and pelt processing machine operators and workers",
     "examples": [
       "autoclave tender - textile manufacturing",
@@ -40919,7 +40919,7 @@
     "requires_experience": false
   },
   {
-    "code": 9442,
+    "noc": 9442,
     "group": "Weavers, knitters and other fabric making occupations",
     "examples": [
       "carpet weaver",
@@ -41089,7 +41089,7 @@
     "requires_experience": false
   },
   {
-    "code": 9445,
+    "noc": 9445,
     "group": "Fabric, fur and leather cutters",
     "examples": [
       "clothing cutter",
@@ -41174,7 +41174,7 @@
     "requires_experience": false
   },
   {
-    "code": 9446,
+    "noc": 9446,
     "group": "Industrial sewing machine operators",
     "examples": [
       "fur sewing machine operator",
@@ -41294,7 +41294,7 @@
     "requires_experience": false
   },
   {
-    "code": 9447,
+    "noc": 9447,
     "group": "Inspectors and graders, textile, fabric, fur and leather products manufacturing",
     "examples": [
       "cloth inspector",
@@ -41437,7 +41437,7 @@
     "requires_experience": false
   },
   {
-    "code": 9461,
+    "noc": 9461,
     "group": "Process control and machine operators, food and beverage processing",
     "examples": [
       "bakery machine operator - food and beverage processing",
@@ -41970,7 +41970,7 @@
     "requires_experience": false
   },
   {
-    "code": 9462,
+    "noc": 9462,
     "group": "Industrial butchers and meat cutters, poultry preparers and related workers",
     "examples": [
       "beef boner",
@@ -42064,7 +42064,7 @@
     "requires_experience": false
   },
   {
-    "code": 9463,
+    "noc": 9463,
     "group": "Fish and seafood plant workers",
     "examples": [
       "fish cake maker",
@@ -42175,7 +42175,7 @@
     "requires_experience": false
   },
   {
-    "code": 9465,
+    "noc": 9465,
     "group": "Testers and graders, food and beverage processing",
     "examples": [
       "beef grader",
@@ -42272,7 +42272,7 @@
     "requires_experience": false
   },
   {
-    "code": 9471,
+    "noc": 9471,
     "group": "Plateless printing equipment operators",
     "examples": [
       "colour copier operator",
@@ -42360,7 +42360,7 @@
     "requires_experience": false
   },
   {
-    "code": 9472,
+    "noc": 9472,
     "group": "Camera, platemaking and other prepress occupations",
     "examples": [
       "camera operator - graphic arts",
@@ -42520,7 +42520,7 @@
     "requires_experience": false
   },
   {
-    "code": 9473,
+    "noc": 9473,
     "group": "Binding and finishing machine operators",
     "examples": [
       "binder - printing",
@@ -42641,7 +42641,7 @@
     "requires_experience": false
   },
   {
-    "code": 9474,
+    "noc": 9474,
     "group": "Photographic and film processors",
     "examples": [
       "darkroom technician",
@@ -42729,7 +42729,7 @@
     "requires_experience": false
   },
   {
-    "code": 9521,
+    "noc": 9521,
     "group": "Aircraft assemblers and aircraft assembly inspectors",
     "examples": [
       "aircraft assembler",
@@ -42816,7 +42816,7 @@
     "requires_experience": false
   },
   {
-    "code": 9522,
+    "noc": 9522,
     "group": "Motor vehicle assemblers, inspectors and testers",
     "examples": [
       "assembly inspector - motor vehicle manufacturing",
@@ -42968,7 +42968,7 @@
     "requires_experience": false
   },
   {
-    "code": 9523,
+    "noc": 9523,
     "group": "Electronics assemblers, fabricators, inspectors and testers",
     "examples": [
       "capacitor assembler",
@@ -43233,7 +43233,7 @@
     "requires_experience": false
   },
   {
-    "code": 9524,
+    "noc": 9524,
     "group": "Assemblers and inspectors, electrical appliance, apparatus and equipment manufacturing",
     "examples": [
       "circuit breaker assembler",
@@ -43431,7 +43431,7 @@
     "requires_experience": false
   },
   {
-    "code": 9525,
+    "noc": 9525,
     "group": "Assemblers, fabricators and inspectors, industrial electrical motors and transformers",
     "examples": [
       "alternating current (AC) and direct current (DC) motors fitter-assembler",
@@ -43600,7 +43600,7 @@
     "requires_experience": false
   },
   {
-    "code": 9526,
+    "noc": 9526,
     "group": "Mechanical assemblers and inspectors",
     "examples": [
       "automotive engine assembler",
@@ -43753,7 +43753,7 @@
     "requires_experience": false
   },
   {
-    "code": 9527,
+    "noc": 9527,
     "group": "Machine operators and inspectors, electrical apparatus manufacturing",
     "examples": [
       "assembly machine setter - electrical equipment manufacturing",
@@ -43943,7 +43943,7 @@
     "requires_experience": false
   },
   {
-    "code": 9531,
+    "noc": 9531,
     "group": "Boat assemblers and inspectors",
     "examples": [
       "aluminum boat assembler",
@@ -44014,7 +44014,7 @@
     "requires_experience": false
   },
   {
-    "code": 9532,
+    "noc": 9532,
     "group": "Furniture and fixture assemblers and inspectors",
     "examples": [
       "assembly inspector - furniture manufacturing",
@@ -44127,7 +44127,7 @@
     "requires_experience": false
   },
   {
-    "code": 9533,
+    "noc": 9533,
     "group": "Other wood products assemblers and inspectors",
     "examples": [
       "manufactured housing production worker",
@@ -44263,7 +44263,7 @@
     "requires_experience": false
   },
   {
-    "code": 9534,
+    "noc": 9534,
     "group": "Furniture finishers and refinishers",
     "examples": [
       "finishing machine operator - furniture manufacturing",
@@ -44347,7 +44347,7 @@
     "requires_experience": false
   },
   {
-    "code": 9535,
+    "noc": 9535,
     "group": "Plastic products assemblers, finishers and inspectors",
     "examples": [
       "fibreglass laminator",
@@ -44478,7 +44478,7 @@
     "requires_experience": false
   },
   {
-    "code": 9536,
+    "noc": 9536,
     "group": "Industrial painters, coaters and metal finishing process operators",
     "examples": [
       "assembly line painter",
@@ -44730,7 +44730,7 @@
     "requires_experience": false
   },
   {
-    "code": 9537,
+    "noc": 9537,
     "group": "Other products assemblers, finishers and inspectors",
     "examples": [
       "antenna assembler",
@@ -45326,7 +45326,7 @@
     "requires_experience": false
   },
   {
-    "code": 9611,
+    "noc": 9611,
     "group": "Labourers in mineral and metal processing",
     "examples": [
       "asbestos worker - mineral processing",
@@ -45567,7 +45567,7 @@
     "requires_experience": false
   },
   {
-    "code": 9612,
+    "noc": 9612,
     "group": "Labourers in metal fabrication",
     "examples": [
       "blacksmith helper",
@@ -45715,7 +45715,7 @@
     "requires_experience": false
   },
   {
-    "code": 9613,
+    "noc": 9613,
     "group": "Labourers in chemical products processing and utilities",
     "examples": [
       "coating machine feeder - chemical processing",
@@ -45806,7 +45806,7 @@
     "requires_experience": false
   },
   {
-    "code": 9614,
+    "noc": 9614,
     "group": "Labourers in wood, pulp and paper processing",
     "examples": [
       "beater operator helper - pulp and paper",
@@ -45924,7 +45924,7 @@
     "requires_experience": false
   },
   {
-    "code": 9615,
+    "noc": 9615,
     "group": "Labourers in rubber and plastic products manufacturing",
     "examples": [
       "belt builder helper",
@@ -46034,7 +46034,7 @@
     "requires_experience": false
   },
   {
-    "code": 9616,
+    "noc": 9616,
     "group": "Labourers in textile processing",
     "examples": [
       "doffer",
@@ -46132,7 +46132,7 @@
     "requires_experience": false
   },
   {
-    "code": 9617,
+    "noc": 9617,
     "group": "Labourers in food and beverage processing",
     "examples": [
       "bottle-washing machine tender - food and beverage processing",
@@ -46359,7 +46359,7 @@
     "requires_experience": false
   },
   {
-    "code": 9618,
+    "noc": 9618,
     "group": "Labourers in fish and seafood processing",
     "examples": [
       "cannery labourer",
@@ -46415,7 +46415,7 @@
     "requires_experience": false
   },
   {
-    "code": 9619,
+    "noc": 9619,
     "group": "Other labourers in processing, manufacturing and utilities",
     "examples": [
       "bindery helper",
