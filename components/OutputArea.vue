@@ -3,7 +3,7 @@
 const { $titleCase } = useNuxtApp();
 
 // Component Props
-const props = defineProps({
+const { jobs, groups } = defineProps({
   jobs: {
     type: Array,
     required: true,
@@ -14,79 +14,56 @@ const props = defineProps({
   },
 });
 
-// Reactive Variables
+const hasResults = jobs.length > 0; // Used in rendering either results or "no results found".
 const showModal = ref(false);
 const selectedJob = ref(null);
-const displayedJobs = ref(props.jobs);
-const filterSearchInput = ref("");
+const subFilterInput = ref("");
 
-// Filtered Sub-Search Job Results
-const filteredJobs = computed(() => {
-  const search = filterSearchInput.value.toLowerCase();
-  return displayedJobs.value.filter((job) => {
-    return job.title.toLowerCase().includes(search);
+const filteredJobResults = computed(() => {
+  return jobs.filter((job) => {
+    return job.title
+      .toLowerCase()
+      .includes(subFilterInput.value.toLowerCase().trim());
   });
 });
 
-// Used in rendering either results or "no results found".
-const hasResults = computed(() => {
-  return displayedJobs.value.length > 0;
-});
-
-// Sort jobs by experience requirements to render in the UI.
-const noExpJobs = computed(() => {
-  if (!filterSearchInput.value) {
-    return displayedJobs.value.filter((job) => {
-      return job.requires_experience === false;
-    });
-  }
-  return filteredJobs.value.filter((job) => {
-    return job.requires_experience === false;
-  });
-});
-const expJobs = computed(() => {
-  if (!filterSearchInput.value) {
-    return displayedJobs.value.filter((job) => {
-      return job.requires_experience === true;
-    });
-  }
-  return filteredJobs.value.filter((job) => {
-    return job.requires_experience === true;
+const jobsRequiringExperience = computed(() => {
+  return filteredJobResults.value.filter((job) => {
+    return findGroup(job.noc).requires_experience;
   });
 });
 
-// Compute wether each job group has jobs or not.
-const hasExperiencedJobs = computed(() => {
-  return expJobs.value.length > 0;
-});
-const hasNoExperiencedJobs = computed(() => {
-  return noExpJobs.value.length > 0;
+const jobsNotRequiringExperience = computed(() => {
+  return filteredJobResults.value.filter((job) => {
+    return !findGroup(job.noc).requires_experience;
+  });
 });
 
 // Get related group details for a given NOC number.
 function getGroupDetails(noc) {
   const group = findGroup(noc);
-  const title = group.title;
-  const requirements = group.requirements;
-  const description = group.description;
+
   return {
-    title,
-    requirements,
-    description,
+    noc,
+    title: group.title,
+    duties: group.duties,
+    education: group.education,
+    experience: group.experience,
+    requirements: group.requirements,
+    description: group.duties,
   };
 }
 
 // Search for a group by NOC number.
 function findGroup(noc) {
-  const group = props.groups.find((group) => {
+  return groups.find((group) => {
     return group.noc === noc;
   });
-  return group;
 }
 
 function openModal(job) {
-  showModal.value = true;
   setSelectedJob(job);
+  showModal.value = true;
 }
 
 function closeModal() {
@@ -94,14 +71,16 @@ function closeModal() {
 }
 
 function setSelectedJob(job) {
+  const noc = jobs.find((j) => j.title === job.title).noc;
   selectedJob.value = {
     ...job,
-    group: getGroupDetails(job.noc),
+    noc,
+    group: getGroupDetails(noc),
   };
 }
 
 function clearSearch() {
-  filterSearchInput.value = "";
+  subFilterInput.value = "";
 }
 </script>
 
@@ -114,25 +93,27 @@ function clearSearch() {
           Start typing to filter through search results.
         </p>
         <div class="sub-search-area">
-          <input type="text" v-model="filterSearchInput" />
+          <input type="text" v-model="subFilterInput" />
           <button @click.prevent="clearSearch">Clear</button>
         </div>
       </div>
-      <div v-if="hasNoExperiencedJobs">
+      <div v-if="true">
         <h3>Jobs Available After Graduation</h3>
         <div class="results-area">
           <ResultChip
-            v-for="job in noExpJobs"
+            v-for="(job, index) of jobsNotRequiringExperience"
+            :key="job.title + index"
             :result="job.title"
             @click="openModal(job)"
           />
         </div>
       </div>
-      <div v-if="hasExperiencedJobs">
+      <div v-if="true">
         <h3>Jobs Available With Credential &amp; Experience</h3>
         <div class="results-area">
           <ResultChip
-            v-for="job in expJobs"
+            v-for="(job, index) of jobsRequiringExperience"
+            :key="job.title + index"
             :result="job.title"
             @click="openModal(job)"
           />

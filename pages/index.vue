@@ -16,12 +16,28 @@ watch(credential, () => {
   }
 });
 
+useHead({
+  title: "VIU Graduate Career Outlooks",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  charset: "utf-8",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Search for careers and career outlooks in Canada based on a given VIU credential.",
+    },
+  ],
+  // bodyAttrs: {
+  //   class: 'test'
+  // }
+});
+
 // Search Function
 async function search() {
   // Loading...
   loading.value = true;
   // Prepare our search request.
-  const url = new URL("/api/v1/jobs-by-credential", window.location.origin);
+  const url = new URL("/api/v2/jobs-by-credential", window.location.origin);
   url.searchParams.append("credential", credential.value);
   url.searchParams.append("keywords", keywords.value);
   if (duration.value) url.searchParams.append("duration", duration.value);

@@ -6,11 +6,15 @@ const props = defineProps({
   },
 });
 
-const jobNoc = ref(props.details.noc);
-const jobTitle = ref(props.details.title);
-const jobDescription = ref(props.details.group.description);
-const jobRequirements = ref(props.details.group.requirements);
-const jobGroupName = ref(props.details.group.title);
+const noc = ref(props.details.noc);
+const job = ref(props.details.title);
+const descriptions = ref(props.details.group.description);
+const requirements = ref(props.details.group.requirements);
+const education = ref(props.details.group.education);
+const experience = ref(props.details.group.experience);
+const group = ref(props.details.group.title);
+
+console.table(props.details);
 </script>
 
 <template>
@@ -18,29 +22,35 @@ const jobGroupName = ref(props.details.group.title);
     <div class="modal-content">
       <div class="modal-header">
         <span class="close" @click="$emit('close')">&times;</span>
-        <h2>{{ $titleCase(jobTitle) }}</h2>
+        <h2>{{ $titleCase(job) }}</h2>
       </div>
       <div class="modal-body">
         <div class="group-details">
           <h3>
             NOC Group:
-            <span v-if="jobGroupName">{{ $titleCase(jobGroupName) }}</span>
+            <span v-if="group">{{ $titleCase(group) }}</span>
             <span v-else>Unknown</span>
           </h3>
           <h3>
-            NOC Code: <span v-if="jobNoc">{{ jobNoc }}</span
+            NOC Code: <span v-if="noc">{{ noc }}</span
             ><small v-else><i>unknown</i></small>
           </h3>
         </div>
+        <h4>Education</h4>
+        <ul>
+          <li v-for="requirement of education">
+            {{ requirement }}
+          </li>
+        </ul>
         <h4>Requirements</h4>
         <ul>
-          <li v-for="requirement of jobRequirements">
+          <li v-for="requirement of requirements">
             {{ requirement }}
           </li>
         </ul>
         <h4>Description</h4>
         <ul>
-          <li v-for="description of jobDescription">
+          <li v-for="description of descriptions">
             {{ description }}
           </li>
         </ul>
