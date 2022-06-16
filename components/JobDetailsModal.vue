@@ -13,8 +13,6 @@ const requirements = ref(props.details.group.requirements);
 const education = ref(props.details.group.education);
 const experience = ref(props.details.group.experience);
 const group = ref(props.details.group.title);
-
-console.table(props.details);
 </script>
 
 <template>

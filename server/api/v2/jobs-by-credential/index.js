@@ -89,6 +89,7 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
       title: unitGroup.group,
       duties: unitGroup.duties,
       education: unitGroup.education,
+      requirements: unitGroup.requirements,
       experience: unitGroup.experience,
       requires_experience: unitGroup.requires_experience,
     }
