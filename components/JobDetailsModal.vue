@@ -34,19 +34,19 @@ const group = ref(props.details.group.title);
             ><small v-else><i>unknown</i></small>
           </h3>
         </div>
-        <h4>Education</h4>
+        <h4>Education Requirements</h4>
         <ul>
           <li v-for="requirement of education">
             {{ requirement }}
           </li>
         </ul>
-        <h4>Requirements</h4>
+        <h4>Other Requirements</h4>
         <ul>
           <li v-for="requirement of requirements">
             {{ requirement }}
           </li>
         </ul>
-        <h4>Description</h4>
+        <h4>Unit Group Job Description</h4>
         <ul>
           <li v-for="description of descriptions">
             {{ description }}

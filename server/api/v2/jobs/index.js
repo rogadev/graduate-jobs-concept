@@ -1,4 +1,4 @@
-import unitGroups from '../data/jobs.json'
+import unitGroups from '../../../data/jobs.json'
 
 /**
  * Find only jobs that require no experience.

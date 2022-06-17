@@ -1,10 +1,15 @@
 // Bring in unit groups (316 groups)
-import unitGroups from '../data/jobs.json'
+import unitGroups from '../../../data/jobs.json'
 
 /**
  * Event hanlder for the jobs-by-credential endpoint.
  */
 export default defineEventHandler(async (event) => {
+  return {
+    message:
+      'This version of the API is not available yet. Please check your route and try again.',
+  }
+
   const query = useQuery(event) //  duration?, credential, [keywords]
 
   const search = {}

@@ -1,7 +1,7 @@
 import { sendError, createError } from 'h3'
 
 // Bring in unit groups (316 groups)
-import unitGroups from '../data/noc2016_v1_3.json'
+import unitGroups from '../../../data/noc2016_v1_3.json'
 
 /**
  * Event hanlder for the jobs-by-credential endpoint.
