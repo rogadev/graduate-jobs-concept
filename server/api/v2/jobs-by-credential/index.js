@@ -56,9 +56,13 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
 
     // Add nothing to accumulator and return if there is no keyword his in this unit group.
     if (!unitGroupHasKeywordMatch) return matchedGroups
+    if (credential.toLowerCase().includes('degree'))
+      credential = [...credential, 'college program']
 
     // Consider duration and educational requirements.
-    const credentialKeywords = duration ? [duration, credential] : [credential]
+    const credentialKeywords = duration
+      ? [duration, ...credential]
+      : [...credential]
     credentialKeywords.forEach((keyword) => keyword.toLowerCase().trim()) // formatting
 
     // Matches if all educational requirements are met. Iterating over each educational requirement individually for best results.
