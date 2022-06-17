@@ -1,34 +1,32 @@
-import { sendError, createError } from 'h3'
-
 // Bring in unit groups (316 groups)
-import unitGroups from '../data/noc2016_v1_3.json'
+import unitGroups from '../data/jobs.json'
 
 /**
  * Event hanlder for the jobs-by-credential endpoint.
  */
 export default defineEventHandler(async (event) => {
-  const query = useQuery(event) //  query properties expected: duration?, credential, keywords
+  const query = useQuery(event) //  duration?, credential, [keywords]
 
-  // ERROR HANDLING
-  // Should we not receive a "credential" or "keywords" in our query, respond with error and return
-  if ((!query.credential ?? true) && (!query.keywords ?? true)) {
-    sendError(
-      event,
-      createError({
-        statusCode: 400,
-        statusMessage: 'Query was not correctly sent with request.',
-        debug: false,
-      })
-    )
-    return
+  const search = {}
+
+  if (query.duration) {
+    // we are searching for duration AND credential AND 1 or more keywords
+    search.duration = query.duration
+    search.credential = query.credential
+    search.keywords = new Array(query.keywords)
+  } else {
+    // we are searching only for credential AND 1 or more keywords
+    search.credential = query.credential
+    search.keywords = new Array(query.keywords)
   }
 
-  // Using our query object, find related groups and return
-  return findRelatedUnitGroups(
-    query.credential,
-    query.keywords,
-    query.duration ?? false
+  const relatedGroups = findRelatedUnitGroups(
+    search.credential,
+    search.keywords,
+    search.duration
   )
+
+  return relatedGroups
 })
 
 /**
@@ -37,65 +35,80 @@ export default defineEventHandler(async (event) => {
  * @param {Array<String>} keywords
  * @param {String} duration
  */
-function findRelatedUnitGroups(credential, keywords, duration = false) {
-  const initialKeywordsSearchArray = keywords.trim().toLowerCase().split(',')
-
-  const relatedJobs = [] // Used to push our found related jobs to.
-
-  // Filter unit groups to only those related to our search - will return as "groups" in our outbound object
+function findRelatedUnitGroups(credential, rawKeywords, duration = false) {
+  const jobList = []
+  // rawKeywords is an object, get the array, split it at commas, lowercase and trim each string.
+  const keywords = rawKeywords[0]
+    .split(',')
+    .map((keyword) => keyword.trim().toLowerCase())
   const relatedGroups = unitGroups.reduce((matchedGroups, unitGroup) => {
-    const educationalRequirements = unitGroup.education
-    const eduReqString = educationalRequirements.join(' ').toLowerCase() // stringified for faster searching using regex
+    const employmentRequirements = unitGroup.details.find((detail) => {
+      return detail.section === 'Employment requirements'
+    }).details
 
-    // True if matched with at least 1 of the keywords is in the employment requirements
-    const unitGroupHasKeywordMatch = initialKeywordsSearchArray.some(
-      (keyword) => {
-        return eduReqString.match(new RegExp(keyword, 'gi'))
-      }
-    )
+    // Stringify our employment requirements for fast regex searching.
+    const stringOfRequirements = employmentRequirements.join(' ').toLowerCase()
 
-    // Add nothing to accumulator and return if there is no keyword his in this unit group.
-    if (!unitGroupHasKeywordMatch) return matchedGroups
-    if (credential.toLowerCase().includes('degree'))
-      credential = [...credential, 'college program']
+    // Matches if at least 1 of the keywords is in the employment requirements
+    const hasKeywordMatch = keywords.some((keyword) => {
+      return stringOfRequirements.match(new RegExp(keyword, 'gi'))
+    })
+
+    // If not, we're done here. This unit group does not meet our requirements.
+    if (!hasKeywordMatch) return matchedGroups
 
     // Consider duration and educational requirements.
-    const credentialKeywords = duration
-      ? [duration, ...credential]
-      : [...credential]
-    credentialKeywords.forEach((keyword) => keyword.toLowerCase().trim()) // formatting
+    const educationKeywords = duration ? [duration, credential] : [credential]
+    educationKeywords.forEach((keyword) => keyword.toLowerCase().trim())
+
+    // GOOD UP UNTIL HERE...
 
     // Matches if all educational requirements are met. Iterating over each educational requirement individually for best results.
-    const unitGroupHasCredentialMatch = credentialKeywords.every((keyword) => {
-      for (const requirement of educationalRequirements) {
+    const hasEducationMatch = educationKeywords.every((keyword) => {
+      for (const requirement of employmentRequirements) {
         if (requirement.match(new RegExp(keyword, 'gi'))) {
           return true
         }
       }
     })
 
-    // Add nothing to accumulator and return if there is no keyword his in this unit group.
-    if (!unitGroupHasCredentialMatch) return matchedGroups
+    if (!hasEducationMatch) return matchedGroups
 
-    const jobs = unitGroup.examples
+    // Boolean set to true if requires "years of experience". False otherwise.
+    const doesRequireExperience = stringOfRequirements.match(
+      new RegExp('years of experience', 'gi')
+    )
+      ? true
+      : false
+
+    // Split off relivant data from Unit Group
+    const nocNumber = unitGroup.noc_number
+    const groupTitle = unitGroup.occupation
+    const requirements = unitGroup.details.find((detail) => {
+      return detail.section === 'Employment requirements'
+    }).details
+    const description = unitGroup.details.find((detail) => {
+      return detail.section === 'Main duties'
+    }).details
+    const jobs = unitGroup.details.find((detail) => {
+      return detail.section === 'Illustrative example(s)'
+    }).details
 
     // Add each of our job objects to our list of applicable jobs for later use outside this block.
     jobs.forEach((job) => {
-      relatedJobs.push({
-        noc: unitGroup.noc,
+      jobList.push({
+        noc: nocNumber,
         title: job,
+        requires_experience: doesRequireExperience,
       })
     })
 
     // Add our unit group to our list of related groups.
     const newMatch = {
-      noc: unitGroup.noc,
-      title: unitGroup.group,
-      duties: unitGroup.duties,
-      education: unitGroup.education,
-      requirements: unitGroup.requirements,
-      experience: unitGroup.experience,
-      requires_experience: unitGroup.requires_experience,
+      noc: nocNumber,
+      title: groupTitle,
+      requirements,
+      description,
     }
 
     return [...matchedGroups, newMatch]
@@ -103,6 +116,6 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
 
   return {
     groups: relatedGroups,
-    jobs: relatedJobs,
+    jobs: jobList,
   }
 }
