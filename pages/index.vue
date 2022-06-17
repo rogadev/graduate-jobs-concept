@@ -68,7 +68,6 @@ async function search() {
           v-model="duration"
           v-if="credential === 'Degree'"
         >
-          <option value=""></option>
           <option value="Bachelor's">Bachelor's</option>
           <option value="Master's">Master's</option>
         </select>
