@@ -67,10 +67,10 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
 
     // Improvement to help find diploma credentials - NOC2016 uses "college program" instead of "diploma" a lot.
     if (credentialKeywords.includes('diploma'))
-      credentialKeywords = ['college program']
+      credentialKeywords = ['college program', 'college or other program']
 
     // Matches if all educational requirements are met. Iterating over each educational requirement individually for best results.
-    const unitGroupHasCredentialMatch = credentialKeywords.every((keyword) => {
+    const unitGroupHasCredentialMatch = credentialKeywords.some((keyword) => {
       for (const requirement of educationalRequirements) {
         if (requirement.match(new RegExp(keyword, 'gi'))) {
           return true
