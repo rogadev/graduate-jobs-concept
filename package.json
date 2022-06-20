@@ -7,6 +7,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@nuxt/test-utils-edge": "^3.0.0-rc.4-27588443.cf25525",
     "autoprefixer": "^10.4.7",
     "nuxt": "3.0.0-rc.3",
     "postcss": "^8.4.14",
