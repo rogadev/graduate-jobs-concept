@@ -69,6 +69,9 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
     if (credentialKeywords.includes('diploma'))
       credentialKeywords = ['college program', 'college or other program']
 
+    if (credentialKeywords.includes('certificate'))
+      credentialKeywords = ['certificate', 'beauty school programs']
+
     // Matches if all educational requirements are met. Iterating over each educational requirement individually for best results.
     const unitGroupHasCredentialMatch = credentialKeywords.some((keyword) => {
       for (const requirement of educationalRequirements) {
