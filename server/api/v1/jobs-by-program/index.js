@@ -1,3 +1,11 @@
+/**
+ * @api: api/v1/jobs-by-program
+ * @author: Ryan Roga (www.roga.dev), Vancouver Island University (www.VIU.ca)
+ * @license: None
+ * @description: /jobs-by-program route for graduate jobs project.
+ * @since: June 22, 2022
+ */
+
 // For use in error handling
 import { sendError, createError } from 'h3'
 
@@ -57,6 +65,42 @@ export default defineEventHandler(async (event) => {
   // Query parameter error handling
   checkQuery(event, nid)
 
+  let foundResults = false
+  let jobResults = []
+  let groupResults = []
+  let jobCount = 0
+  let groupCount = 0
+  // Search for program NID in programs middle table
+  for (const program of programs) {
+    if (program.nid === Number(nid)) {
+      foundResults = true
+
+      const { jobs, groups } = await $fetch(
+        `/api/v1/jobs-by-credential?credential=${
+          program.credential
+        }&keywords=${program.noc_search_keywords.join(',')}`
+      )
+      for (const job of jobs) {
+        jobResults.push(job)
+        jobCount++
+      }
+      for (const group of groups) {
+        groupResults.push(group)
+        groupCount++
+      }
+    }
+  }
+  if (foundResults) {
+    console.log(
+      `Found ${jobCount} jobs in ${groupCount} unit groups for program NID: ${nid}`
+    )
+    return {
+      jobs: Array.from(new Set(jobResults)),
+      groups: Array.from(new Set(groupResults)),
+    }
+  }
+
+  // Respond
   return {
     searched: nid,
   }
