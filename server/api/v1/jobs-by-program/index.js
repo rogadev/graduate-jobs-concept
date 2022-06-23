@@ -104,10 +104,12 @@ export default defineEventHandler(async (event) => {
         debug: false,
       })
     )
-
+    // Log out the time it took to hit the error and return
     console.log('Returned in:', Date.now() - startTime, 'ms')
     return
-  } else {
+  }
+  // If program found, continue
+  else {
     // Search for jobs and unit groups based on program search parameters
     const { jobs, groups } = await searchWithKeywords(
       program.credential,
@@ -127,28 +129,27 @@ export default defineEventHandler(async (event) => {
       groupCount++
     }
   }
-
+  // If we have found results, return them
   if (foundResults) {
+    // Log out the time it took to find the results and return
     console.log(
       `Returned ${jobCount} jobs in ${groupCount} unit groups for program NID: ${nid} in:`,
       Date.now() - startTime,
       'ms'
     )
-
     return {
       jobs: Array.from(new Set(jobResults)),
       groups: Array.from(new Set(groupResults)),
     }
   }
 
-  // Failsafe - something went horribly wrong...
+  // Something unexpected went wrong if we're hitting this error
   console.log('Returned in:', Date.now() - startTime, 'ms')
-
   return sendError(
     createError({
       statusCode: 500,
       statusMessage: `Something went wrong searching for nid ${nid}.`,
-      debug: false,
+      debug: true,
     })
   )
 })
