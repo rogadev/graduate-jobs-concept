@@ -28,10 +28,34 @@ useHead({
     },
   ],
 });
+
+let selectedProgram;
+const programs = await $fetch("/api/v1/programs");
 </script>
 
 <template>
   <div>
     <nuxt-link to="/">Back</nuxt-link>
+    <h1>Search for Jobs by Program</h1>
+    <select
+      class="select-field"
+      name="credential_type"
+      id="credential_type"
+      v-model="selectedProgram"
+    >
+      <option v-for="option of programs" :value="option.nid" :key="option.nid">
+        {{ option.title }}
+      </option>
+    </select>
+    <button>Search</button>
   </div>
 </template>
+
+<style scoped>
+.select-field {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+</style>
