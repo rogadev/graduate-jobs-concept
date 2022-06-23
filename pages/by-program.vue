@@ -29,8 +29,65 @@ useHead({
   ],
 });
 
-let selectedProgram;
+const selectedProgramNid = ref(0);
+const searchResults = ref([]);
+const selectedJob = ref({});
+const showModal = ref(null);
+
 const programs = await $fetch("/api/v1/programs");
+
+const updateSearch = async () => {
+  console.log(selectedProgramNid.value);
+  const url = new URL("/api/v1/jobs-by-program", window.location.origin);
+  url.searchParams.append("nid", selectedProgramNid.value);
+  searchResults.value = await $fetch(url);
+};
+
+const jobs = computed(() => {
+  if (Object.keys(searchResults.value).length === 2) {
+    return searchResults.value.jobs;
+  }
+});
+
+const groups = computed(() => {
+  if (Object.keys(searchResults.value).length === 2) {
+    return searchResults.value.groups;
+  }
+});
+
+function getGroupDetails(noc) {
+  const group = groups.value.find((group) => {
+    return group.noc === noc;
+  });
+
+  return {
+    noc,
+    title: group.title,
+    duties: group.duties,
+    education: group.education,
+    experience: group.experience,
+    requirements: group.requirements,
+    description: group.duties,
+  };
+}
+
+function setSelectedJob(job) {
+  const noc = jobs.value.find((j) => j.title === job.title).noc;
+  selectedJob.value = {
+    ...job,
+    group: getGroupDetails(noc),
+  };
+}
+
+const openModal = (job) => {
+  setSelectedJob(job);
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  showModal.value = false;
+  selectedJob.value = {};
+};
 </script>
 
 <template>
@@ -41,13 +98,26 @@ const programs = await $fetch("/api/v1/programs");
       class="select-field"
       name="credential_type"
       id="credential_type"
-      v-model="selectedProgram"
+      v-model="selectedProgramNid"
     >
       <option v-for="option of programs" :value="option.nid" :key="option.nid">
         {{ option.title }}
       </option>
     </select>
-    <button>Search</button>
+    <button @click="updateSearch">Search</button>
+    <div v-if="Object.keys(searchResults).length > 0">
+      <ResultChip
+        v-for="job in jobs"
+        :key="job.noc"
+        :result="job.title"
+        @click="openModal(job)"
+      />
+    </div>
+    <JobDetailsModal
+      v-if="showModal"
+      :details="selectedJob"
+      @close="closeModal"
+    />
   </div>
 </template>
 
