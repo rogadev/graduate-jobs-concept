@@ -5,6 +5,7 @@ const props = defineProps({
     required: true,
   },
 });
+console.log(props.details);
 
 const noc = ref(props.details.noc);
 const job = ref(props.details.title);

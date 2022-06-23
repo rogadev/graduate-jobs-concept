@@ -102,7 +102,7 @@ function clearSearch() {
         <div class="results-area">
           <ResultChip
             v-for="(job, index) of jobsNotRequiringExperience"
-            :key="job.title + index"
+            :key="job.title.split(' ').join('') + index"
             :result="job.title"
             @click="openModal(job)"
           />

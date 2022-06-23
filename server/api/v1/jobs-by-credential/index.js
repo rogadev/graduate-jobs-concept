@@ -109,7 +109,7 @@ function findRelatedUnitGroups(credential, keywords, duration = false) {
   }, [])
 
   return {
-    groups: relatedGroups,
     jobs: relatedJobs,
+    groups: relatedGroups,
   }
 }
