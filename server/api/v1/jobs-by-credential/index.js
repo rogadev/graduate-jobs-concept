@@ -7,7 +7,7 @@ import unitGroups from '../../../data/noc2016_v1_3.json'
  * Event hanlder for the jobs-by-credential endpoint.
  */
 export default defineEventHandler(async (event) => {
-  const query = useQuery(event) //  query properties expected: duration?, credential, keywords
+  const query = getQuery(event) //  query properties expected: duration?, credential, keywords
 
   // ERROR HANDLING
   // Should we not receive a "credential" or "keywords" in our query, respond with error and return

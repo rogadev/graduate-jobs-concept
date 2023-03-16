@@ -76,7 +76,7 @@ function findJobsRequiringExperience(...matches) {
 }
 
 export default defineEventHandler(async (event) => {
-  const { credential, field } = useQuery(event)
+  const { credential, field } = getQuery(event)
   const searchTerms = [credential, field]
   return {
     after_graduation: findJobsWithoutExperience(...searchTerms),

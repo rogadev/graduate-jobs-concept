@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
       'This version of the API is not available yet. Please check your route and try again.',
   }
 
-  const query = useQuery(event) //  duration?, credential, [keywords]
+  const query = getQuery(event) //  duration?, credential, [keywords]
 
   const search = {}
 
