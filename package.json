@@ -4,13 +4,10 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/test-utils-edge": "^3.0.0-rc.4-27588443.cf25525",
-    "autoprefixer": "^10.4.7",
-    "nuxt": "3.0.0-rc.3",
-    "postcss": "^8.4.14",
-    "vitest": "^0.15.1"
+    "nuxt": "^3.3.1"
   }
 }
