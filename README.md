@@ -1,4 +1,6 @@
-# VIU Career Path Outlook Project
+# Proof Of Concept Project
+
+## VIU Career Path Outlook Project
 
 The purpose of this project is to provide potential future students and current students a way to evaluate different career paths and their general outlook according to Stats Canada and other sources.
 
