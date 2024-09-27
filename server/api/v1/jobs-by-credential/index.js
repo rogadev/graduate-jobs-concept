@@ -10,17 +10,16 @@ export default defineEventHandler(async (event) => {
   const query = getQuery(event) //  query properties expected: duration?, credential, keywords
 
   // ERROR HANDLING
-  // Should we not receive a "credential" or "keywords" in our query, respond with error and return
-  if ((!query.credential ?? true) && (!query.keywords ?? true)) {
-    sendError(
+  // If we don't receive either "credential" or "keywords" in our query, respond with an error and return
+  if (!query.credential && !query.keywords) {
+    return sendError(
       event,
       createError({
         statusCode: 400,
-        statusMessage: 'Query was not correctly sent with request.',
+        statusMessage: 'Query must include either "credential" or "keywords".',
         debug: false,
       })
     )
-    return
   }
 
   // Using our query object, find related groups and return
